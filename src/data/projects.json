@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Nova Commercial Tower",
+    "category": "Commercial Design",
+    "image": "/image/project1.webp",
+    "location": "Downtown Business District",
+    "year": 2023,
+    "description": "A modern commercial tower designed with cutting-edge architectural principles and sustainable building practices.",
+    "details": "Nova Commercial Tower is a state-of-the-art 25-story commercial complex featuring modern office spaces, retail outlets, and premium amenities. The building incorporates energy-efficient systems, smart building technology, and eco-friendly materials throughout.",
+    "features": [
+      "25-Story Modern Design",
+      "Green Building Certification",
+      "Smart Building Systems",
+      "Premium Office Spaces",
+      "Retail & Food Courts",
+      "Rooftop Garden"
+    ],
+    "client": "Delta Development Corp",
+    "budget": "$45 Million",
+    "duration": "24 months"
+  },
+  {
+    "id": 2,
+    "title": "Serenity Villas",
+    "category": "Residential Planning",
+    "image": "/image/project2.webp",
+    "location": "Suburban Residential Area",
+    "year": 2022,
+    "description": "A luxurious residential community with contemporary villa designs and premium amenities.",
+    "details": "Serenity Villas is an exclusive gated community comprising 45 luxury villas designed with modern aesthetics and maximum comfort. Each villa features spacious layouts, private gardens, and premium finishes.",
+    "features": [
+      "45 Luxury Villas",
+      "Gated Community",
+      "Private Gardens",
+      "Swimming Pool & Gym",
+      "24/7 Security",
+      "Community Center"
+    ],
+    "client": "Harmony Homes Ltd",
+    "budget": "$32 Million",
+    "duration": "30 months"
+  },
+  {
+    "id": 3,
+    "title": "Tech Hub Complex",
+    "category": "Structural Engineering",
+    "image": "/image/project3.webp",
+    "location": "Tech Park Zone",
+    "year": 2023,
+    "description": "An innovative tech hub designed to support startups and established technology companies.",
+    "details": "Tech Hub Complex is a multi-building IT ecosystem featuring collaborative workspaces, incubation centers, and innovation labs. The complex includes state-of-the-art facilities with high-speed internet infrastructure.",
+    "features": [
+      "4 Modern Buildings",
+      "Co-working Spaces",
+      "Incubation Labs",
+      "High-Speed Internet",
+      "Conference Rooms",
+      "Cafeteria & Recreation"
+    ],
+    "client": "TechVenture Investments",
+    "budget": "$28 Million",
+    "duration": "18 months"
+  },
+  {
+    "id": 4,
+    "title": "Eco Retreat Resort",
+    "category": "Architectural Planning",
+    "image": "/image/project4.webp",
+    "location": "Coastal Region",
+    "year": 2024,
+    "description": "A sustainable resort that seamlessly blends luxury with environmental consciousness.",
+    "details": "Eco Retreat Resort is an eco-friendly 5-star resort featuring 120 rooms, multiple restaurants, and recreational facilities. Built with sustainable materials and renewable energy systems.",
+    "features": [
+      "120 Eco-Friendly Rooms",
+      "Multiple Dining Options",
+      "Spa & Wellness Center",
+      "Water Sports Activities",
+      "Solar & Wind Power",
+      "Organic Gardens"
+    ],
+    "client": "Nature Luxe Resorts",
+    "budget": "$55 Million",
+    "duration": "28 months"
+  }
+]

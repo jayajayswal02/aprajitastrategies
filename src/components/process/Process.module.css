@@ -1,0 +1,56 @@
+.process {
+  background: var(--surface);
+}
+
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.stepCard {
+  position: relative;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--background);
+  border-radius: var(--border-radius);
+  transition: transform var(--transition-normal);
+  border: 1px solid var(--border);
+}
+
+.stepCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-soft);
+  border-color: var(--secondary-light);
+}
+
+.stepNumber {
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--primary);
+  opacity: 0.1;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  transition: opacity var(--transition-normal);
+}
+
+.stepCard:hover .stepNumber {
+  opacity: 0.2;
+}
+
+.stepTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+.stepDesc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

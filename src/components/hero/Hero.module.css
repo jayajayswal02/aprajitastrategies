@@ -1,0 +1,141 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: var(--background);
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.bgPattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+  opacity: 0.03;
+}
+
+.bgIcon1 {
+  position: absolute;
+  font-size: 800px !important;
+  color: var(--primary);
+  top: -100px;
+  right: -200px;
+  transform: rotate(15deg);
+}
+
+.bgIcon2 {
+  position: absolute;
+  font-size: 500px !important;
+  color: var(--secondary);
+  bottom: -150px;
+  left: -100px;
+  transform: rotate(-10deg);
+}
+
+.bgIcon3 {
+  position: absolute;
+  font-size: 400px !important;
+  color: var(--primary);
+  top: 40%;
+  right: 20%;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.content {
+  max-width: 800px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(26, 67, 49, 0.1);
+  color: var(--primary);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.highlight {
+  color: var(--primary);
+}
+
+.tagline {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  color: var(--text-muted);
+  max-width: 600px;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.actions {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.statsPanel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.statCard {
+  background: var(--surface);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  border-bottom: 4px solid var(--secondary);
+  transition: transform var(--transition-normal);
+}
+
+.statCard:hover {
+  transform: translateY(-10px);
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    min-height: 100vh;
+  }
+}

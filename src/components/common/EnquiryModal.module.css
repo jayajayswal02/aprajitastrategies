@@ -1,0 +1,193 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: slideUp 0.3s ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  transition: color var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  z-index: 10;
+}
+
+.closeBtn:hover {
+  color: var(--primary-dark);
+}
+
+.content {
+  padding: 3rem 2rem;
+}
+
+.content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.content > p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: var(--primary-dark);
+  font-size: 0.95rem;
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color var(--transition-normal);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--secondary-light);
+  box-shadow: 0 0 0 3px rgba(107, 184, 158, 0.1);
+}
+
+.formGroup input::placeholder {
+  color: #999;
+}
+
+.submitBtn {
+  padding: 0.9rem 1.5rem;
+  background: var(--secondary-light);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  margin-top: 1rem;
+}
+
+.submitBtn:hover {
+  background: #5ba389;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 184, 158, 0.3);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+}
+
+.successMessage {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.successIcon {
+  font-size: 3rem;
+  color: var(--secondary-light);
+  margin-bottom: 1rem;
+  animation: scaleIn 0.4s ease-in-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.successMessage h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.successMessage p {
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    width: 95%;
+  }
+
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+}

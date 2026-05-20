@@ -1,0 +1,68 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Variants */
+.primary {
+  background: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(26, 67, 49, 0.2);
+}
+.primary:hover:not(:disabled) {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 67, 49, 0.3);
+}
+
+.secondary {
+  background: var(--secondary);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(95, 108, 55, 0.2);
+}
+.secondary:hover:not(:disabled) {
+  background: var(--secondary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(95, 108, 55, 0.3);
+}
+
+.outline {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.outline:hover:not(:disabled) {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Sizes */
+.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+.medium {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+.large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.fullWidth {
+  width: 100%;
+}

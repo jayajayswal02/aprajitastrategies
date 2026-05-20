@@ -1,0 +1,131 @@
+.about {
+  background: var(--surface);
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.imageColumn {
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/5;
+  border-radius: var(--border-radius);
+  background: var(--primary-dark);
+  border-radius: 20px;
+  overflow: visible;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--primary) 0%, var(--primary-light) 100%);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imagePattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.1) 2px, transparent 2px);
+  background-size: 30px 30px;
+  opacity: 0.5;
+}
+
+.imageWrapper::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--secondary);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-hover);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 2;
+  border-left: 4px solid var(--secondary);
+}
+
+.years {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: var(--font-heading);
+}
+
+.text {
+  font-weight: 600;
+  color: var(--text-muted);
+  line-height: 1.2;
+}
+
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.featureList {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+  color: var(--text-main);
+  font-size: 1.1rem;
+}
+
+.icon {
+  color: var(--secondary);
+}
+
+.cta {
+  margin-top: 1rem;
+}
+
+@media (max-width: 968px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .imageColumn {
+    padding: 0 20px;
+    margin-bottom: 2rem;
+  }
+}

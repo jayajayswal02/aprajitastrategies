@@ -1,0 +1,51 @@
+.wrapper {
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.left {
+  text-align: left;
+}
+.left .line {
+  margin: 1rem 0 0 0;
+}
+
+.center {
+  text-align: center;
+}
+.center .line {
+  margin: 1rem auto 0 auto;
+}
+
+.subtitle {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--secondary);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.line {
+  width: 60px;
+  height: 4px;
+  background: var(--secondary);
+  border-radius: 2px;
+}
+
+/* Dark mode variants for dark backgrounds */
+.dark .subtitle {
+  color: var(--secondary-light);
+}
+.dark .title {
+  color: #fff;
+}
