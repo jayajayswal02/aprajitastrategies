@@ -37,10 +37,16 @@ export default function Projects() {
                   <div className={styles.overlayContent}>
                     <span className={styles.category}>{project.category}</span>
                     <h3 className={styles.title}>{project.title}</h3>
+                  
                   </div>
                 </div>
+                
               </div>
+                <button className={styles.viewDetailsBtn}>
+                      View Details
+                    </button>
             </Link>
+            
           ))}
         </div>
       </Container>

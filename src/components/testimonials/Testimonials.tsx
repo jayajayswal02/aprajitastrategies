@@ -7,20 +7,20 @@ import StarIcon from '@mui/icons-material/Star';
 
 const reviews = [
   {
-    name: 'Sarah Mitchell',
-    role: 'CEO, Nexus Corp',
+    name: 'Rajesh Kumar',
+    role: 'CEO, Mumbai Enterprises',
     text: 'Aprajita Strategies transformed our vision into an architectural masterpiece. The structural integrity and attention to detail were second to none.',
     rating: 5
   },
   {
-    name: 'David Robinson',
-    role: 'Property Developer',
+    name: 'Priya Sharma',
+    role: 'Property Developer, Delhi',
     text: 'Working with the Aprajita Strategies team was seamless. Their project management kept us on budget while delivering premium results.',
     rating: 5
   },
   {
-    name: 'Elena Vance',
-    role: 'Homeowner',
+    name: 'Anita Gupta',
+    role: 'Homeowner, Bangalore',
     text: 'They built our dream home. The 3D visualization helped us see everything beforehand, and the final result was even better.',
     rating: 5
   }
