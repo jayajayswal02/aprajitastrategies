@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Footer.module.css';
-import Logo from '../../../public/logowithname.png';
+import Logo from '../../../public/logoORANGE.png';
 import contactData from '../../data/contact.json';
 
 export default function Footer() {
