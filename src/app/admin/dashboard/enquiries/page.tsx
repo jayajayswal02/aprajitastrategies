@@ -13,6 +13,8 @@ import ErrorIcon from '@mui/icons-material/Error';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MessageIcon from '@mui/icons-material/Message';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import CloseIcon from '@mui/icons-material/Close';
 
 interface Enquiry {
   id: number;
@@ -28,6 +30,7 @@ export default function EnquiriesPage() {
   const [enquiries, setEnquiries] = useState<Enquiry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [selectedEnquiry, setSelectedEnquiry] = useState<Enquiry | null>(null);
 
   useEffect(() => {
     fetchData();
@@ -174,6 +177,13 @@ export default function EnquiriesPage() {
                         <WhatsAppIcon />
                       </button>
                       <button
+                        className={`${styles.actionBtn} ${styles.view}`}
+                        onClick={() => setSelectedEnquiry(enquiry)}
+                        title="View Details"
+                      >
+                        <VisibilityIcon />
+                      </button>
+                      <button
                         className={`${styles.actionBtn} ${styles.delete}`}
                         onClick={() => handleDelete(enquiry.id)}
                         title="Delete"
@@ -188,6 +198,44 @@ export default function EnquiriesPage() {
           </table>
         )}
       </div>
+
+      {selectedEnquiry && (
+        <div className={styles.modalOverlay} onClick={() => setSelectedEnquiry(null)}>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.modalHeader}>
+              <h2>Enquiry Details</h2>
+              <button className={styles.closeBtn} onClick={() => setSelectedEnquiry(null)}>
+                <CloseIcon />
+              </button>
+            </div>
+            <div className={styles.modalBody}>
+              <div className={styles.detailRow}>
+                <strong>Name:</strong>
+                <span>{selectedEnquiry.name}</span>
+              </div>
+              <div className={styles.detailRow}>
+                <strong>Phone:</strong>
+                <span>{selectedEnquiry.phone || '—'}</span>
+              </div>
+              <div className={styles.detailRow}>
+                <strong>Service Type:</strong>
+                <span>{selectedEnquiry.project_type || '—'}</span>
+              </div>
+              <div className={styles.detailRow}>
+                <strong>Status:</strong>
+                <span className={`${styles.status} ${styles[selectedEnquiry.status]}`}>{selectedEnquiry.status}</span>
+              </div>
+              <div className={styles.detailRow}>
+                <strong>Date:</strong>
+                <span>{new Date(selectedEnquiry.created_at).toLocaleString()}</span>
+              </div>
+            </div>
+            <div className={styles.modalFooter}>
+              <button className={styles.closeButtonPrimary} onClick={() => setSelectedEnquiry(null)}>Close</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -269,7 +269,145 @@
   background: #c82333;
 }
 
-.actionBtn.save {
+.actionBtn.view {
+  background: #17a2b8;
+}
+
+.actionBtn.view:hover {
+  background: #138496;
+}
+
+/* Modal Styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 2px solid #eee;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}
+
+.modalBody {
+  padding: 2rem 1.5rem;
+}
+
+.detailRow {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.detailRow:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.detailRow strong {
+  color: var(--primary-dark);
+  font-weight: 600;
+  min-width: 100px;
+}
+
+.detailRow span {
+  color: var(--text-main);
+  flex-grow: 1;
+  word-break: break-word;
+}
+
+.fullMessage {
+  white-space: normal;
+  line-height: 1.6;
+}
+
+.modalFooter {
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.closeButtonPrimary {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.closeButtonPrimary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.save {
   background: var(--secondary);
   font-size: 0.8rem;
   width: auto;
@@ -277,7 +415,7 @@
   height: auto;
 }
 
-.actionBtn.cancel {
+.cancel {
   background: #6c757d;
   font-size: 0.8rem;
   width: auto;
@@ -304,8 +442,14 @@
     justify-content: center;
   }
 
+  .tableContainer {
+    overflow-x: auto;
+  }
+
   .table {
     font-size: 0.85rem;
+    width: 100%;
+    min-width: 800px;
   }
 
   .table th,
@@ -314,12 +458,79 @@
   }
 
   .message {
-    max-width: 100px;
+    max-width: 80px;
   }
 
   .actionBtn {
     width: 32px;
     height: 32px;
     font-size: 0.9rem;
+  }
+
+  .actionGroup {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem;
+  }
+
+  .header h1 {
+    font-size: 1.1rem;
+  }
+
+  .table {
+    font-size: 0.75rem;
+    min-width: 600px;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.5rem 0.3rem;
+  }
+
+  .message {
+    max-width: 60px;
+  }
+
+  .actionBtn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .bold {
+    font-size: 0.85rem;
+  }
+
+  .small {
+    font-size: 0.7rem;
+  }
+
+  .modalOverlay {
+    padding: 0.5rem;
+  }
+
+  .modal {
+    border-radius: 8px;
+  }
+
+  .modalHeader h2 {
+    font-size: 1.1rem;
+  }
+
+  .modalBody {
+    padding: 1rem;
+  }
+
+  .detailRow {
+    flex-direction: column;
+  }
+
+  .detailRow strong {
+    min-width: auto;
+    color: var(--primary);
   }
 }

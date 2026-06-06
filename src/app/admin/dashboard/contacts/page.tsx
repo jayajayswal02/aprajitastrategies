@@ -13,6 +13,8 @@ import ErrorIcon from '@mui/icons-material/Error';
 import PhoneIcon from '@mui/icons-material/Phone';
 import MessageIcon from '@mui/icons-material/Message';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import CloseIcon from '@mui/icons-material/Close';
 
 interface Contact {
   id: number;
@@ -28,6 +30,7 @@ export default function ContactsPage() {
   const [contacts, setContacts] = useState<Contact[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [selectedContact, setSelectedContact] = useState<Contact | null>(null);
 
   useEffect(() => {
     fetchData();
@@ -174,6 +177,13 @@ export default function ContactsPage() {
                         <WhatsAppIcon />
                       </button>
                       <button
+                        className={`${styles.actionBtn} ${styles.view}`}
+                        onClick={() => setSelectedContact(contact)}
+                        title="View Details"
+                      >
+                        <VisibilityIcon />
+                      </button>
+                      <button
                         className={`${styles.actionBtn} ${styles.delete}`}
                         onClick={() => handleDelete(contact.id)}
                         title="Delete"
@@ -188,6 +198,44 @@ export default function ContactsPage() {
           </table>
         )}
       </div>
+
+      {selectedContact && (
+        <div className={styles.modalOverlay} onClick={() => setSelectedContact(null)}>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.modalHeader}>
+              <h2>Contact Details</h2>
+              <button className={styles.closeBtn} onClick={() => setSelectedContact(null)}>
+                <CloseIcon />
+              </button>
+            </div>
+            <div className={styles.modalBody}>
+              <div className={styles.detailRow}>
+                <strong>Name:</strong>
+                <span>{selectedContact.name}</span>
+              </div>
+              <div className={styles.detailRow}>
+                <strong>Phone:</strong>
+                <span>{selectedContact.phone || '—'}</span>
+              </div>
+              <div className={styles.detailRow}>
+                <strong>Message:</strong>
+                <span className={styles.fullMessage}>{selectedContact.message}</span>
+              </div>
+              <div className={styles.detailRow}>
+                <strong>Status:</strong>
+                <span className={`${styles.status} ${styles[selectedContact.status]}`}>{selectedContact.status}</span>
+              </div>
+              <div className={styles.detailRow}>
+                <strong>Date:</strong>
+                <span>{new Date(selectedContact.created_at).toLocaleString()}</span>
+              </div>
+            </div>
+            <div className={styles.modalFooter}>
+              <button className={styles.closeButtonPrimary} onClick={() => setSelectedContact(null)}>Close</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
