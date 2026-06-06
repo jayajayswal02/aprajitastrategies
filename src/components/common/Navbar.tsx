@@ -2,11 +2,16 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.css';
 import Image from 'next/image';
 import Logo from '../../../public/logoORANGE.png';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+import { IconButton } from '@mui/material';
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -17,6 +22,11 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Hide navbar on admin routes
+  if (pathname.startsWith('/admin')) {
+    return null;
+  }
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
@@ -41,15 +51,14 @@ export default function Navbar() {
           </div>
         </nav>
 
-        <button 
-          className={styles.hamburger} 
+        <IconButton
+          className={styles.hamburger}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle Navigation"
+          sx={{ display: { xs: 'flex', md: 'none' }, color: 'inherit' }}
         >
-          <span className={`${styles.bar} ${menuOpen ? styles.bar1 : ''}`}></span>
-          <span className={`${styles.bar} ${menuOpen ? styles.bar2 : ''}`}></span>
-          <span className={`${styles.bar} ${menuOpen ? styles.bar3 : ''}`}></span>
-        </button>
+          {menuOpen ? <CloseIcon /> : <MenuIcon />}
+        </IconButton>
       </div>
     </header>
   );

@@ -54,3 +54,25 @@
   font-size: 0.9rem;
   line-height: 1.5;
 }
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem;
+  background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+  border-radius: 50%;
+  transition: transform var(--transition-normal);
+}
+
+.stepCard:hover .iconWrapper {
+  transform: scale(1.1) rotateZ(-5deg);
+}
+
+.stepIcon {
+  font-size: 2rem;
+  color: #fff;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}

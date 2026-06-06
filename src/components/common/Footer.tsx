@@ -1,11 +1,25 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import styles from './Footer.module.css';
 import Logo from '../../../public/logoORANGE.png';
 import contactData from '../../data/contact.json';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import ScheduleIcon from '@mui/icons-material/Schedule';
+import LockIcon from '@mui/icons-material/Lock';
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Hide footer on admin routes
+  if (pathname.startsWith('/admin')) {
+    return null;
+  }
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -52,16 +66,21 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.heading}>Contact Info</h4>
             <ul className={styles.contactDetails}>
-              <li>📍 {contactData.address}</li>
-              <li>📞 {contactData.phone}</li>
-              <li>📧 {contactData.email}</li>
-              <li>⏰ {contactData.workingHours}</li>
+              <li><LocationOnIcon className={styles.icon} /> {contactData.address}</li>
+              <li><PhoneIcon className={styles.icon} /> {contactData.phone}</li>
+              <li><EmailIcon className={styles.icon} /> {contactData.email}</li>
+              <li><ScheduleIcon className={styles.icon} /> {contactData.workingHours}</li>
             </ul>
           </div>
         </div>
         
         <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} Aprajita Strategies Construction Consultancy. All rights reserved.</p>
+          <div className={styles.bottomContent}>
+            <p>&copy; {new Date().getFullYear()} Aprajita Strategies Construction Consultancy. All rights reserved.</p>
+            <Link href="/admin/login" className={styles.adminBtn}>
+              <LockIcon /> Admin Login
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

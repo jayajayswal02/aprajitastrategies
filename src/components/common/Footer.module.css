@@ -72,15 +72,61 @@
 .contactDetails li {
   color: #555;
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
+  transition: color var(--transition-normal);
+}
+
+.contactDetails li:hover {
+  color: var(--primary-dark);
+}
+
+.icon {
+  font-size: 1.5rem !important;
+  color: var(--primary) !important;
+  flex-shrink: 0;
 }
 
 .bottom {
-  text-align: center;
   padding-top: 2rem;
   border-top: 1px solid #e0e0e0;
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.bottom p {
+  margin: 0;
   color: #999;
   font-size: 0.9rem;
+}
+
+.adminBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all var(--transition-normal);
+}
+
+.adminBtn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 67, 49, 0.3);
+}
+
+.adminBtn svg {
+  font-size: 1rem !important;
 }
 
 @media (max-width: 768px) {

@@ -1,17 +1,23 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Container from '../common/Container';
 import SectionTitle from '../common/SectionTitle';
 import Button from '../common/Button';
 import styles from './Contact.module.css';
-import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import ErrorIcon from '@mui/icons-material/Error';
 import contactData from '../../data/contact.json';
+import { submitContact } from '../../lib/supabase';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState('');
   return (
     <section id="contact" className={`section-spacing ${styles.contact}`}>
       <Container>
@@ -37,10 +43,6 @@ export default function Contact() {
                   <PhoneIcon className={styles.icon} />
                   <span>{contactData.phone}</span>
                 </div>
-                <div className={styles.infoItem}>
-                  <EmailIcon className={styles.icon} />
-                  <span>{contactData.email}</span>
-                </div>
               </div>
               
               <div className={styles.whatsappWrapper}>
@@ -52,32 +54,88 @@ export default function Contact() {
           </div>
           
           <div className={styles.formColumn}>
-            <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
-              <div className={styles.inputGroup}>
-                <label htmlFor="name">Full Name</label>
-                <input type="text" id="name" placeholder="John Doe" required />
+            {success ? (
+              <div className={styles.successMessage}>
+                <CheckCircleIcon className={styles.successIcon} />
+                <h3>Thank You!</h3>
+                <p>Your message has been received. We&apos;ll contact you soon.</p>
               </div>
-              
-              <div className={styles.row}>
+            ) : (
+              <form className={styles.form} onSubmit={async (e) => {
+                e.preventDefault();
+                if (!formData.name || !formData.phone || !formData.message) {
+                  setError('Please fill in all required fields');
+                  return;
+                }
+                
+                setLoading(true);
+                setError('');
+                
+                try {
+                  await submitContact({
+                    name: formData.name,
+                    phone: formData.phone,
+                    message: formData.message
+                  });
+                  
+                  setSuccess(true);
+                  setFormData({ name: '', phone: '', message: '' });
+                  
+                  setTimeout(() => setSuccess(false), 5000);
+                } catch (err: unknown) {
+                  const error = err instanceof Error ? err : new Error('Failed to submit');
+                  setError(error.message || 'Failed to submit. Please try again.');
+                } finally {
+                  setLoading(false);
+                }
+              }}>
+                {error && (
+                  <div className={styles.errorMessage}>
+                    <ErrorIcon className={styles.errorIcon} />
+                    {error}
+                  </div>
+                )}
+                
                 <div className={styles.inputGroup}>
-                  <label htmlFor="email">Email</label>
-                  <input type="email" id="email" placeholder="john@example.com" required />
+                  <label htmlFor="name">Full Name *</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="John Doe" 
+                    value={formData.name}
+                    onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    required 
+                  />
                 </div>
+                
+                  <div className={styles.inputGroup}>
+                    <label htmlFor="phone">Phone</label>
+                    <input 
+                      type="tel" 
+                      id="phone" 
+                      placeholder="(123) 456-7890" 
+                      value={formData.phone}
+                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    />
+                  </div>
+                
                 <div className={styles.inputGroup}>
-                  <label htmlFor="phone">Phone</label>
-                  <input type="tel" id="phone" placeholder="(123) 456-7890" />
+                  <label htmlFor="message">Message *</label>
+                  <textarea 
+                    id="message" 
+                    rows={5} 
+                    placeholder="Tell us about your project..." 
+                    value={formData.message}
+                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    required
+                  ></textarea>
                 </div>
-              </div>
-              
-              <div className={styles.inputGroup}>
-                <label htmlFor="message">Message</label>
-                <textarea id="message" rows={5} placeholder="Tell us about your project..." required></textarea>
-              </div>
-              
-              <Button type="submit" size="large" className={styles.submitBtn}>
-                Send Message
-              </Button>
-            </form>
+                
+                <Button type="submit" size="large" className={styles.submitBtn} disabled={loading}>
+                  {loading ? 'Sending...' : 'Send Message'}
+                </Button>
+              </form>
+            )}
           </div>
         </div>
       </Container>

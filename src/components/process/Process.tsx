@@ -2,15 +2,21 @@ import React from 'react';
 import Container from '../common/Container';
 import SectionTitle from '../common/SectionTitle';
 import styles from './Process.module.css';
+import ForumIcon from '@mui/icons-material/Forum';
+import EditIcon from '@mui/icons-material/Edit';
+import ArchitectureIcon from '@mui/icons-material/Architecture';
+import GavelIcon from '@mui/icons-material/Gavel';
+import BuildIcon from '@mui/icons-material/Build';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 export default function Process() {
   const steps = [
-    { number: '01', title: 'Consultation', desc: 'Initial contact to understand your vision.' },
-    { number: '02', title: 'Planning', desc: 'Developing strategies and timelines.' },
-    { number: '03', title: 'Design', desc: 'Architectural and structural drafting.' },
-    { number: '04', title: 'Approval', desc: 'Securing necessary permits.' },
-    { number: '05', title: 'Execution', desc: 'On-site construction and management.' },
-    { number: '06', title: 'Delivery', desc: 'Final handover of the completed project.' }
+    { number: '01', title: 'Consultation', desc: 'Initial contact to understand your vision.', icon: ForumIcon },
+    { number: '02', title: 'Planning', desc: 'Developing strategies and timelines.', icon: EditIcon },
+    { number: '03', title: 'Design', desc: 'Architectural and structural drafting.', icon: ArchitectureIcon },
+    { number: '04', title: 'Approval', desc: 'Securing necessary permits.', icon: GavelIcon },
+    { number: '05', title: 'Execution', desc: 'On-site construction and management.', icon: BuildIcon },
+    { number: '06', title: 'Delivery', desc: 'Final handover of the completed project.', icon: CheckCircleIcon }
   ];
 
   return (
@@ -24,6 +30,9 @@ export default function Process() {
         <div className={styles.processGrid}>
           {steps.map((step, idx) => (
             <div key={idx} className={styles.stepCard}>
+              <div className={styles.iconWrapper}>
+                <step.icon className={styles.stepIcon} />
+              </div>
               <div className={styles.stepNumber}>{step.number}</div>
               <h4 className={styles.stepTitle}>{step.title}</h4>
               <p className={styles.stepDesc}>{step.desc}</p>
