@@ -27,15 +27,26 @@ export default function Process() {
           title="Our Proven Methodology"
         />
         
-        <div className={styles.processGrid}>
+        <div className={styles.timeline}>
           {steps.map((step, idx) => (
-            <div key={idx} className={styles.stepCard} style={{ '--index': idx } as React.CSSProperties}>
-              <div className={styles.iconWrapper}>
-                <step.icon className={styles.stepIcon} />
+            <div key={idx} className={styles.timelineItem} style={{ '--index': idx } as React.CSSProperties}>
+              <div className={styles.timelineContent}>
+                <div className={styles.iconNode}>
+                  <div className={styles.nodeCircle}>
+                    <step.icon className={styles.stepIcon} />
+                  </div>
+                </div>
+                
+                <div className={styles.stepBox}>
+                  <div className={styles.stepNumber}>{step.number}</div>
+                  <h4 className={styles.stepTitle}>{step.title}</h4>
+                  <p className={styles.stepDesc}>{step.desc}</p>
+                </div>
               </div>
-              <div className={styles.stepNumber}>{step.number}</div>
-              <h4 className={styles.stepTitle}>{step.title}</h4>
-              <p className={styles.stepDesc}>{step.desc}</p>
+              
+              {idx < steps.length - 1 && (
+                <div className={styles.connector}></div>
+              )}
             </div>
           ))}
         </div>
