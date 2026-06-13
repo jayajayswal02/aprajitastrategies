@@ -1,0 +1,187 @@
+[
+  {
+    "id": 1,
+    "title": "Construction Consultancy",
+    "description": "Expert guidance for residential and commercial construction projects. Our experienced consultants provide comprehensive advice on project feasibility, risk management, and best practices.",
+    "image": "/image/service-1.jpg",
+    "icon": "construction",
+    "overview": "Our construction consultancy services provide end-to-end guidance for successful project delivery. We combine industry expertise with innovative solutions to ensure your project meets all requirements.",
+    "process": [
+      "Initial site assessment and feasibility study",
+      "Project planning and scheduling",
+      "Budget estimation and cost control",
+      "Risk assessment and mitigation strategies",
+      "Regular monitoring and reporting"
+    ],
+    "features": [
+      "Expert consultation with 15+ years of experience",
+      "Comprehensive project planning",
+      "Budget optimization strategies",
+      "Risk management framework",
+      "Regular progress monitoring"
+    ],
+    "details": "We provide strategic consultancy to ensure your construction project succeeds from start to finish. Our team evaluates your project requirements, identifies potential risks, and develops comprehensive plans for timely and cost-effective execution."
+  },
+  {
+    "id": 2,
+    "title": "Architectural Planning",
+    "description": "Innovative and sustainable architectural designs tailored to your vision. We create designs that balance aesthetics with functionality and environmental sustainability.",
+    "image": "/image/service-2.jpg",
+    "icon": "architecture",
+    "overview": "Our architectural planning services transform your vision into stunning, functional designs. We specialize in creating spaces that blend beauty, sustainability, and practicality.",
+    "process": [
+      "Understanding client vision and requirements",
+      "Conceptual design development",
+      "Detailed architectural drawings",
+      "3D visualization and rendering",
+      "Design refinement and approval"
+    ],
+    "features": [
+      "Innovative design concepts",
+      "Sustainable building practices",
+      "Advanced CAD technology",
+      "3D visualization",
+      "Client-centered approach"
+    ],
+    "details": "We create architectural designs that stand the test of time. Our approach combines modern design principles with sustainable practices, ensuring your building is not only beautiful but also environmentally responsible and cost-effective."
+  },
+  {
+    "id": 3,
+    "title": "Structural Design",
+    "description": "Robust structural engineering ensuring safety and longevity of your projects. Our team uses advanced analysis tools to create structures that withstand all conditions.",
+    "image": "/image/service-3.jpg",
+    "icon": "structure",
+    "overview": "Structural design is the backbone of any construction project. We provide comprehensive structural engineering services using cutting-edge technology and best practices.",
+    "process": [
+      "Load analysis and calculations",
+      "Material selection and specifications",
+      "FEA (Finite Element Analysis)",
+      "Design optimization",
+      "Technical documentation and approval"
+    ],
+    "features": [
+      "Advanced structural analysis",
+      "Seismic design compliance",
+      "Material optimization",
+      "Durability assessment",
+      "Quality assurance"
+    ],
+    "details": "Our structural engineers use advanced analysis software to design structures that are safe, efficient, and economical. We ensure all designs comply with building codes and withstand various environmental conditions."
+  },
+  {
+    "id": 4,
+    "title": "Interior Design",
+    "description": "Elegant aesthetics combined with functional interior spaces that reflect your style. We transform spaces into beautiful, livable environments.",
+    "image": "/image/service-4.jpg",
+    "icon": "interior",
+    "overview": "Interior design is about creating spaces that work as beautifully as they look. Our designs reflect your personality while maximizing functionality and comfort.",
+    "process": [
+      "Space planning and analysis",
+      "Concept development",
+      "Color and material selection",
+      "Furniture and fixture planning",
+      "Implementation supervision"
+    ],
+    "features": [
+      "Personalized design concepts",
+      "Space optimization",
+      "Material and color expertise",
+      "Furniture curation",
+      "Implementation support"
+    ],
+    "details": "We create interior spaces that inspire and delight. Our designers combine aesthetic sensibilities with practical functionality to create environments that enhance your lifestyle and boost productivity."
+  },
+  {
+    "id": 5,
+    "title": "Project Management",
+    "description": "End-to-end execution, ensuring timely and on-budget delivery of your projects. Our project managers maintain quality and keep stakeholders informed throughout.",
+    "image": "/image/service-5.jpg",
+    "icon": "management",
+    "overview": "Professional project management ensures your construction project stays on track. We coordinate all aspects of your project for seamless execution.",
+    "process": [
+      "Project planning and scheduling",
+      "Resource allocation",
+      "Progress tracking and reporting",
+      "Quality control",
+      "Issue resolution and optimization"
+    ],
+    "features": [
+      "Experienced project managers",
+      "Advanced project management tools",
+      "Regular reporting and updates",
+      "Risk mitigation strategies",
+      "Quality assurance protocols"
+    ],
+    "details": "Our project management team brings years of experience in coordinating complex construction projects. We use industry-leading software and methodologies to ensure projects are completed on time, within budget, and to specification."
+  },
+  {
+    "id": 6,
+    "title": "Site Inspection",
+    "description": "Rigorous quality checks and on-site engineering supervision to maintain highest standards. Regular inspections ensure compliance with specifications and regulations.",
+    "image": "/image/service-6.jpg",
+    "icon": "inspection",
+    "overview": "Quality assurance through comprehensive site inspections ensures your project meets the highest standards. Our inspectors verify compliance at every phase.",
+    "process": [
+      "Foundation inspection",
+      "Structural verification",
+      "Material testing",
+      "Safety compliance checks",
+      "Final quality assessment"
+    ],
+    "features": [
+      "Certified quality inspectors",
+      "Comprehensive testing protocols",
+      "Safety compliance verification",
+      "Detailed inspection reports",
+      "Non-destructive testing"
+    ],
+    "details": "We conduct rigorous inspections at every stage of construction to ensure quality and safety. Our certified inspectors use advanced testing methods to verify that all work meets specifications and building codes."
+  },
+  {
+    "id": 7,
+    "title": "Estimation & Costing",
+    "description": "Precise budgeting and financial planning for your projects with detailed cost breakdowns. We help you understand every expense in your project.",
+    "image": "/image/service-7.jpg",
+    "icon": "costing",
+    "overview": "Accurate cost estimation is crucial for project success. Our detailed budgeting ensures you understand exactly where your money goes.",
+    "process": [
+      "Detailed quantity surveying",
+      "Material cost analysis",
+      "Labor cost estimation",
+      "Overhead and contingency planning",
+      "Budget monitoring and updates"
+    ],
+    "features": [
+      "Detailed cost breakdowns",
+      "Market rate analysis",
+      "Contingency planning",
+      "Budget tracking",
+      "Value engineering"
+    ],
+    "details": "Our quantity surveyors provide detailed, transparent cost estimates that help you plan your budget effectively. We analyze material costs, labor rates, and market conditions to give you accurate projections."
+  },
+  {
+    "id": 8,
+    "title": "3D Visualization",
+    "description": "Photorealistic renders and walkthroughs before construction begins. Visualize your project before breaking ground with stunning 3D models.",
+    "image": "/image/service-8.jpg",
+    "icon": "visualization",
+    "overview": "See your project before it's built with stunning 3D visualizations. Our renderings help you make informed decisions about design and materials.",
+    "process": [
+      "3D model creation",
+      "Material and texture application",
+      "Lighting design",
+      "Camera positioning",
+      "Final rendering and animation"
+    ],
+    "features": [
+      "Photorealistic renderings",
+      "Virtual walkthroughs",
+      "Material visualization",
+      "Lighting analysis",
+      "Animation sequences"
+    ],
+    "details": "Our 3D visualization team creates stunning, photorealistic renderings that bring your project to life. These visualizations help stakeholders understand the design intent and make informed decisions before construction begins."
+  }
+]
+

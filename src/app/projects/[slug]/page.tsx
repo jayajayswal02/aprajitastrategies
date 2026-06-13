@@ -16,8 +16,8 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import TimerIcon from '@mui/icons-material/Timer';
 import MessageIcon from '@mui/icons-material/Message';
 
-export default function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export default function ProjectDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = use(params);
   const [showEnquiryModal, setShowEnquiryModal] = useState(false);
 
   // Helper function to create URL-friendly slug from project title
@@ -28,15 +28,8 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
       .replace(/[^\w-]/g, '');
   };
 
-  // Find project by ID (numeric) or by slug (string)
-  let project = projectsData.find((p: any) => {
-    const isNumeric = !isNaN(Number(id));
-    if (isNumeric) {
-      return p.id === Number(id);
-    } else {
-      return createSlug(p.title) === id;
-    }
-  });
+  // Find project by matching the slug with the title
+  const project = projectsData.find((p: any) => createSlug(p.title) === slug);
 
   if (!project) {
     return (
@@ -141,6 +134,9 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
                   >
                     <MessageIcon /> Send Enquiry
                   </button>
+                  <Button fullWidth className={styles.contactBtn}>
+                    Get a Quote
+                  </Button>
                 </div>
               </div>
             </aside>

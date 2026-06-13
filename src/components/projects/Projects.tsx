@@ -20,6 +20,14 @@ export default function Projects() {
   
   const [activeTab, setActiveTab] = useState<string>('All');
 
+  // Helper function to create URL-friendly slug from project title
+  const createSlug = (title: string) => {
+    return title
+      .toLowerCase()
+      .replace(/\s+/g, '-')
+      .replace(/[^\w-]/g, '');
+  };
+
   const getCategoryColor = (category: string) => {
     const colors: { [key: string]: string } = {
       'Commercial Design': '#2C3E50',
@@ -77,7 +85,7 @@ export default function Projects() {
         <div className={styles.grid}>
           {filteredProjects.length > 0 ? (
             filteredProjects.map((project: { id: number; image: string; title: string; category: string; location: string; year: number; client: string; budget: string }) => (
-              <Link key={project.id} href={`/projects/${project.id}`} className={styles.projectCardLink}>
+              <Link key={project.id} href={`/projects/${createSlug(project.title)}`} className={styles.projectCardLink}>
                 <div className={styles.projectCard}>
                   {/* Image Container */}
                   <div className={styles.imageContainer}>
