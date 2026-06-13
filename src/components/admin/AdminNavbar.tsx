@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -11,22 +11,32 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import MessageIcon from '@mui/icons-material/Message';
 import LogoutIcon from '@mui/icons-material/Logout';
+import CloseIcon from '@mui/icons-material/Close';
 
 export default function AdminNavbar() {
   const router = useRouter();
   const pathname = usePathname();
+  const [showLogoutModal, setShowLogoutModal] = useState(false);
 
   const handleLogout = () => {
-    if (confirm('Are you sure you want to logout?')) {
-      logoutAdmin();
-      router.push('/admin/login');
-    }
+    setShowLogoutModal(true);
+  };
+
+  const confirmLogout = () => {
+    logoutAdmin();
+    setShowLogoutModal(false);
+    router.push('/admin/login');
+  };
+
+  const cancelLogout = () => {
+    setShowLogoutModal(false);
   };
 
   const isActive = (path: string) => pathname === path;
 
   return (
-    <nav className={styles.navbar}>
+    <>
+      <nav className={styles.navbar}>
       <div className={styles.container}>
         {/* Logo Section */}
         <Link href="/admin/dashboard" className={styles.logo}>
@@ -77,6 +87,28 @@ export default function AdminNavbar() {
           <span>Logout</span>
         </button>
       </div>
-    </nav>
+      </nav>
+
+      {/* Logout Confirmation Modal */}
+      {showLogoutModal && (
+        <div className={styles.modalOverlay} onClick={cancelLogout}>
+          <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.modalHeader}>
+              <h2>Confirm Logout</h2>
+              <button className={styles.closeBtn} onClick={cancelLogout}>
+                <CloseIcon />
+              </button>
+            </div>
+            <div className={styles.modalBody}>
+              <p>Are you sure you want to logout from the admin panel?</p>
+            </div>
+            <div className={styles.modalFooter}>
+              <button className={styles.cancelBtn} onClick={cancelLogout}>Cancel</button>
+              <button className={styles.confirmBtn} onClick={confirmLogout}>Logout</button>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

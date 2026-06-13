@@ -29,7 +29,7 @@ export default function Process() {
         
         <div className={styles.processGrid}>
           {steps.map((step, idx) => (
-            <div key={idx} className={styles.stepCard}>
+            <div key={idx} className={styles.stepCard} style={{ '--index': idx } as React.CSSProperties}>
               <div className={styles.iconWrapper}>
                 <step.icon className={styles.stepIcon} />
               </div>
