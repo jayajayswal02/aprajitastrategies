@@ -3,129 +3,346 @@
   position: relative;
 }
 
-.grid {
+/* Centered Overview Section */
+.overviewCenter {
+  margin-bottom: 4rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.descriptionCenter {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Mission & Vision Section */
+.missionVisionSection {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 5rem;
 }
 
-.imageColumn {
-  position: relative;
+.missionCard {
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1) 0%, rgba(var(--secondary-rgb), 0.1) 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border-left: 4px solid var(--primary);
+  box-shadow: var(--shadow-default);
+  transition: all 0.3s ease;
 }
 
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4/5;
-  border-radius: var(--border-radius);
-  background: var(--primary-dark);
-  border-radius: 20px;
-  overflow: visible;
+.missionCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-left-color: var(--secondary);
 }
 
-.imagePlaceholder {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, var(--primary) 0%, var(--primary-light) 100%);
-  border-radius: 20px;
+.visionCard {
+  background: linear-gradient(135deg, rgba(var(--secondary-rgb), 0.1) 0%, rgba(var(--primary-rgb), 0.1) 100%);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border-left: 4px solid var(--secondary);
+  box-shadow: var(--shadow-default);
+  transition: all 0.3s ease;
+}
+
+.visionCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-left-color: var(--primary);
+}
+
+.missionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+  font-family: var(--font-heading);
+}
+
+.missionText {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Expertise Section */
+.expertiseSection {
+  margin-bottom: 5rem;
+}
+
+.expertiseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.expertiseCard {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
 }
 
-.imagePattern {
+.expertiseCard::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-image: radial-gradient(rgba(255,255,255,0.1) 2px, transparent 2px);
-  background-size: 30px 30px;
-  opacity: 0.5;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
-.imageWrapper::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  width: 100%;
-  height: 100%;
-  border: 2px solid var(--secondary);
-  border-radius: 20px;
-  z-index: -1;
-}
-
-.experienceBadge {
-  position: absolute;
-  bottom: -30px;
-  right: -30px;
-  background: var(--surface);
-  padding: 2rem;
-  border-radius: 16px;
+.expertiseCard:hover {
+  border-color: var(--primary);
   box-shadow: var(--shadow-hover);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  z-index: 2;
-  border-left: 4px solid var(--secondary);
+  transform: translateY(-5px);
 }
 
-.years {
-  font-size: 3rem;
+.expertiseCard:hover::before {
+  transform: scaleX(1);
+}
+
+.expertiseTitle {
+  font-size: 1.15rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--text-main);
+  margin-bottom: 0.8rem;
   font-family: var(--font-heading);
 }
 
-.text {
-  font-weight: 600;
+.expertiseDescription {
   color: var(--text-muted);
-  line-height: 1.2;
-}
-
-.contentColumn {
-  display: flex;
-  flex-direction: column;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .description {
   color: var(--text-muted);
   font-size: 1.1rem;
+  line-height: 1.8;
   margin-bottom: 1.5rem;
+}
+
+/* Core Values Section */
+.valuesSection {
+  margin-bottom: 5rem;
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.valueCard {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.valueCard:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-5px);
+}
+
+.valueIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-light), var(--secondary-light));
+  border-radius: 12px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.valueTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.8rem;
+  font-family: var(--font-heading);
+}
+
+.valueDescription {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Strengths Section */
+.strengthsSection {
+  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.05) 0%, rgba(var(--secondary-rgb), 0.05) 100%);
+  padding: 3rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.strengthsContent {
+  max-width: 800px;
 }
 
 .featureList {
   margin: 2rem 0;
   display: grid;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .featureItem {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.featureItem:last-child {
+  border-bottom: none;
+}
+
+.featureItem span {
   font-weight: 500;
   color: var(--text-main);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .icon {
   color: var(--secondary);
+  min-width: 24px;
+  margin-top: 2px;
+}
+
+.detailDescription {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 1.5rem 0;
+}
+
+/* CTA Section */
+.ctaSection {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .cta {
   margin-top: 1rem;
 }
 
+/* Responsive Design */
 @media (max-width: 968px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 4rem;
+  .overviewCenter {
+    margin-bottom: 3rem;
   }
-  
-  .imageColumn {
-    padding: 0 20px;
+
+  .missionVisionSection {
+    grid-template-columns: 1fr;
+    margin-bottom: 3rem;
+  }
+
+  .expertiseGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .sectionHeading {
+    font-size: 1.6rem;
     margin-bottom: 2rem;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .strengthsSection {
+    padding: 2rem;
+  }
+
+  .ctaSection {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .overviewCenter {
+    text-align: center;
+  }
+
+  .descriptionCenter {
+    font-size: 1rem;
+  }
+
+  .missionVisionSection {
+    grid-template-columns: 1fr;
+  }
+
+  .missionCard,
+  .visionCard {
+    padding: 1.5rem;
+  }
+
+  .missionTitle {
+    font-size: 1.2rem;
+  }
+
+  .expertiseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .expertiseCard {
+    padding: 1.5rem;
+  }
+
+  .expertiseTitle {
+    font-size: 1rem;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHeading {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .ctaSection {
+    width: 100%;
   }
 }

@@ -106,7 +106,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="John Doe"
+                  placeholder="Rahul Kumar"
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -119,7 +119,7 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                   type="tel"
                   id="number"
                   name="number"
-                  placeholder="(123) 456-7890"
+                  placeholder="+91 8001820834"
                   value={formData.number}
                   onChange={handleChange}
                   required
