@@ -9,6 +9,7 @@ import Projects from '@/components/projects/Projects';
 import Process from '@/components/process/Process';
 import Testimonials from '@/components/testimonials/Testimonials';
 import FAQ from '@/components/faq/FAQ';
+import Blog from '@/components/blog/Blog';
 import Contact from '@/components/contact/Contact';
 import JsonLd from '@/components/seo/JsonLd';
 import EnquiryModal from '@/components/common/EnquiryModal';
@@ -52,6 +53,7 @@ export default function Home() {
       <Projects />
       <Process />
       <Testimonials />
+      <Blog />
       <FAQ />
       <Contact />
       <EnquiryModal 

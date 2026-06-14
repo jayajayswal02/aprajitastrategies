@@ -4,12 +4,6 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  transition: all var(--transition-normal);
-  background: transparent;
-  padding: 1.5rem 0;
-}
-
-.header.scrolled {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-soft);

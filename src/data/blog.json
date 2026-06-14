@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "Top 10 Construction Trends for 2026",
+    "excerpt": "Discover the latest innovations and trends shaping the construction industry this year. From sustainable materials to smart building technologies, learn what's transforming modern construction.",
+    "content": "The construction industry is rapidly evolving with new technologies and sustainable practices. In 2026, we're seeing a major shift towards green building materials, advanced project management software, and AI-powered safety solutions. These innovations are not only improving efficiency but also making construction safer and more sustainable than ever before.\n\nKey trends include:\n• Green Building Materials: More companies are adopting sustainable materials like recycled steel, bamboo, and eco-friendly concrete.\n• AI-Powered Safety: Artificial intelligence is being used to predict and prevent construction accidents before they happen.\n• Smart Buildings: IoT sensors and smart systems are being integrated into buildings for better energy management.\n• Prefabrication: Off-site construction methods are reducing on-site work and improving quality control.",
+    "author": "Aprajita Team",
+    "date": "2026-01-15",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+    "category": "Construction",
+    "readTime": "5 min read",
+    "tags": ["construction", "trends", "2026"],
+    "keywords": "construction trends 2024, green building materials, AI safety, smart buildings, construction technology"
+  },
+  {
+    "id": 2,
+    "title": "Sustainable Architecture: Building for the Future",
+    "excerpt": "Learn how sustainable design principles can reduce environmental impact while creating beautiful and functional spaces. Explore eco-friendly materials and energy-efficient designs.",
+    "content": "Sustainable architecture is no longer a luxury but a necessity. By incorporating renewable energy sources, recycled materials, and energy-efficient systems, we can create buildings that are both environmentally responsible and cost-effective.\n\nKey sustainable practices:\n• Renewable Energy Integration: Solar panels, wind turbines, and geothermal systems reduce energy consumption.\n• Water Management: Rainwater harvesting and recycling systems minimize water waste.\n• Green Spaces: Rooftop gardens and vertical forests improve air quality and aesthetics.\n• Energy Efficiency: High-performance insulation and smart HVAC systems reduce heating and cooling costs.",
+    "author": "Aprajita Team",
+    "date": "2026-02-10",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+    "category": "Sustainability",
+    "readTime": "6 min read",
+    "tags": ["sustainability", "architecture", "eco-friendly"],
+    "keywords": "sustainable architecture, green buildings, eco-friendly design, renewable energy, energy efficiency"
+  },
+  {
+    "id": 3,
+    "title": "Project Management Best Practices in Construction",
+    "excerpt": "Master the art of construction project management with proven strategies and tools. From planning to execution, learn how to keep projects on schedule and within budget.",
+    "content": "Effective project management is crucial for construction success. Utilizing modern project management tools, clear communication protocols, and risk assessment frameworks can significantly improve project outcomes.\n\nBest practices include:\n• Clear Planning: Define project scope, timeline, and budget before starting work.\n• Regular Communication: Keep all stakeholders informed with weekly progress updates.\n• Risk Management: Identify potential issues early and develop contingency plans.\n• Quality Control: Implement regular inspections and testing throughout the project.\n• Team Coordination: Ensure all teams work together seamlessly towards common goals.",
+    "author": "Aprajita Team",
+    "date": "2026-03-05",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+    "category": "Management",
+    "readTime": "7 min read",
+    "tags": ["management", "project", "best-practices"],
+    "keywords": "project management, construction planning, budget control, risk management, team coordination"
+  },
+  {
+    "id": 4,
+    "title": "The Role of Technology in Modern Construction",
+    "excerpt": "Explore how cutting-edge technology is revolutionizing the construction industry. From BIM to IoT, discover tools that enhance efficiency and safety on job sites.",
+    "content": "Technology is transforming construction practices worldwide. Building Information Modeling (BIM), Internet of Things (IoT) sensors, and artificial intelligence are enabling better decision-making, improved safety, and increased productivity.\n\nKey technologies:\n• BIM: Building Information Modeling allows teams to visualize and plan projects in 3D before construction begins.\n• IoT Sensors: Real-time monitoring of equipment, materials, and workers improves efficiency and safety.\n• Drones: Aerial surveys and inspections reduce time and improve accuracy.\n• AI Analytics: Machine learning algorithms optimize scheduling, resource allocation, and cost estimation.\n• Mobile Apps: On-site teams can access plans, communicate, and report issues in real-time.",
+    "author": "Aprajita Team",
+    "date": "2026-03-20",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    "category": "Technology",
+    "readTime": "8 min read",
+    "tags": ["technology", "bim", "innovation"],
+    "keywords": "construction technology, BIM, IoT sensors, AI in construction, drones, digital transformation"
+  }
+]
