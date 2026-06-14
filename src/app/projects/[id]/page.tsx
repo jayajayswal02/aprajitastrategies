@@ -16,6 +16,20 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import TimerIcon from '@mui/icons-material/Timer';
 import MessageIcon from '@mui/icons-material/Message';
 
+interface Project {
+  id: number;
+  image: string;
+  title: string;
+  category: string;
+  location: string;
+  year: number;
+  client: string;
+  budget: string;
+  details: string;
+  duration: string;
+  features: string[];
+}
+
 export default function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const [showEnquiryModal, setShowEnquiryModal] = useState(false);
@@ -29,7 +43,7 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
   };
 
   // Find project by ID (numeric) or by slug (string)
-  let project = projectsData.find((p: any) => {
+  const project = projectsData.find((p: Project) => {
     const isNumeric = !isNaN(Number(id));
     if (isNumeric) {
       return p.id === Number(id);

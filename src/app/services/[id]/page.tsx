@@ -2,12 +2,25 @@
 
 import React, { useState } from 'react';
 import { useParams } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import Container from '../../../components/common/Container';
 import EnquiryModal from '../../../components/common/EnquiryModal';
 import servicesData from '../../../data/services.json';
 import styles from './ServiceDetail.module.css';
+
+interface Service {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  icon: string;
+  overview: string;
+  process: string[];
+  features: string[];
+  details: string;
+}
+
+type IconComponent = React.ComponentType<{ className?: string }>;
 
 // Icons
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
@@ -22,7 +35,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import MessageIcon from '@mui/icons-material/Message';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
-const iconMap: { [key: string]: any } = {
+const iconMap: { [key: string]: IconComponent } = {
   'construction': MapsHomeWorkIcon,
   'architecture': SquareFootIcon,
   'structure': FoundationIcon,
@@ -47,7 +60,7 @@ export default function ServiceDetail() {
   };
 
   // Find service by slug (or by numeric ID for backward compatibility)
-  let service = servicesData.find((s: any) => {
+  const service = servicesData.find((s: Service) => {
     const isNumeric = !isNaN(Number(slug));
     if (isNumeric) {
       return s.id === Number(slug);
@@ -166,8 +179,6 @@ export default function ServiceDetail() {
         <EnquiryModal
           isOpen={showEnquiryModal}
           onClose={() => setShowEnquiryModal(false)}
-          serviceTitle={service.title}
-          serviceId={service.id}
         />
       )}
     </main>

@@ -3,9 +3,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Container from '../common/Container';
 import SectionTitle from '../common/SectionTitle';
-import Button from '../common/Button';
 import styles from './Projects.module.css';
 import projectsData from '../../data/projects.json';
+
+interface Project {
+  id: number;
+  image: string;
+  title: string;
+  category: string;
+  location: string;
+  year: number;
+  client: string;
+  budget: string;
+}
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -15,7 +25,7 @@ import PersonIcon from '@mui/icons-material/Person';
 export default function Projects() {
   // Extract unique categories
   const categories = Array.from(
-    new Set(projectsData.map((p: any) => p.category))
+    new Set(projectsData.map((p: Project) => p.category))
   ) as string[];
   
   const [activeTab, setActiveTab] = useState<string>('All');
@@ -41,7 +51,7 @@ export default function Projects() {
   // Filter projects based on active tab
   const filteredProjects = activeTab === 'All' 
     ? projectsData 
-    : projectsData.filter((p: any) => p.category === activeTab);
+    : projectsData.filter((p: Project) => p.category === activeTab);
 
   return (
     <section id="projects" className={`section-spacing ${styles.projects}`}>
@@ -76,7 +86,7 @@ export default function Projects() {
             >
               {category}
               <span className={styles.tabCount}>
-                ({projectsData.filter((p: any) => p.category === category).length})
+                ({projectsData.filter((p: Project) => p.category === category).length})
               </span>
             </button>
           ))}
@@ -84,7 +94,7 @@ export default function Projects() {
 
         <div className={styles.grid}>
           {filteredProjects.length > 0 ? (
-            filteredProjects.map((project: { id: number; image: string; title: string; category: string; location: string; year: number; client: string; budget: string }) => (
+            filteredProjects.map((project: Project) => (
               <Link key={project.id} href={`/projects/${createSlug(project.title)}`} className={styles.projectCardLink}>
                 <div className={styles.projectCard}>
                   {/* Image Container */}

@@ -3,10 +3,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Container from '../common/Container';
 import SectionTitle from '../common/SectionTitle';
-import Button from '../common/Button';
 import EnquiryModal from '../common/EnquiryModal';
 import styles from './Services.module.css';
 import servicesData from '../../data/services.json';
+
+interface Service {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  icon: string;
+  overview: string;
+  process: string[];
+  features: string[];
+}
+
+type IconComponent = React.ComponentType<{ className?: string }>;
 
 // Icons
 import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
@@ -20,7 +32,7 @@ import ThreeDRotationIcon from '@mui/icons-material/ThreeDRotation';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import MessageIcon from '@mui/icons-material/Message';
 
-const iconMap: { [key: string]: any } = {
+const iconMap: { [key: string]: IconComponent } = {
   'construction': MapsHomeWorkIcon,
   'architecture': SquareFootIcon,
   'structure': FoundationIcon,
@@ -41,16 +53,13 @@ export default function Services() {
   };
 
   const [showEnquiryModal, setShowEnquiryModal] = useState(false);
-  const [selectedService, setSelectedService] = useState<any>(null);
 
-  const handleEnquiry = (service: any) => {
-    setSelectedService(service);
+  const handleEnquiry = () => {
     setShowEnquiryModal(true);
   };
 
   const handleCloseModal = () => {
     setShowEnquiryModal(false);
-    setSelectedService(null);
   };
   return (
     <section id="services" className={`section-spacing ${styles.services}`}>
@@ -61,7 +70,7 @@ export default function Services() {
         />
         
         <div className={styles.servicesContainer}>
-          {servicesData.map((service: any, idx: number) => {
+          {servicesData.map((service: Service, idx: number) => {
             const IconComponent = iconMap[service.icon];
             const isEvenIndex = idx % 2 === 0;
             
@@ -93,7 +102,7 @@ export default function Services() {
                   <div className={styles.buttonGroup}>
                     <button 
                       className={styles.enquiryBtn}
-                      onClick={() => handleEnquiry(service)}
+                      onClick={() => handleEnquiry()}
                     >
                       <MessageIcon className={styles.btnIcon} />
                       Send Enquiry
