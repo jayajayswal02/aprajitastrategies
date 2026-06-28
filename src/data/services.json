@@ -1,187 +1,456 @@
 [
   {
     "id": 1,
-    "title": "Construction Consultancy",
-    "description": "Expert guidance for residential and commercial construction projects. Our experienced consultants provide comprehensive advice on project feasibility, risk management, and best practices.",
-    "image": "/service/constructionconsultation.png",
-    "icon": "construction",
-    "overview": "Our construction consultancy services provide end-to-end guidance for successful project delivery. We combine industry expertise with innovative solutions to ensure your project meets all requirements.",
+    "title": "Project Management (EPCM/EPC)",
+    "description": "Comprehensive Engineering, Procurement, Construction Management (EPCM) and Engineering, Procurement & Construction (EPC) solutions for industrial, commercial, and infrastructure projects, ensuring quality, safety, timely delivery, and cost efficiency.",
+    "image": "/service/projectmanagement.png",
+    "icon": "engineering",
+    "overview": "Our Project Management (EPCM/EPC) services cover every phase of the project lifecycle, from engineering and procurement to construction, commissioning, and final handover. We ensure seamless coordination, efficient resource management, and successful project execution while maintaining the highest standards of quality and safety.",
     "process": [
-      "Initial site assessment and feasibility study",
-      "Project planning and scheduling",
-      "Budget estimation and cost control",
-      "Risk assessment and mitigation strategies",
-      "Regular monitoring and reporting"
+      "Project feasibility study and planning",
+      "Detailed engineering and design management",
+      "Procurement and vendor coordination",
+      "Construction supervision and quality control",
+      "Testing, commissioning, and project handover"
     ],
     "features": [
-      "Expert consultation with 15+ years of experience",
-      "Comprehensive project planning",
-      "Budget optimization strategies",
-      "Risk management framework",
-      "Regular progress monitoring"
+      "Complete EPCM & EPC project execution",
+      "Experienced multidisciplinary engineering team",
+      "Cost optimization and schedule management",
+      "Quality assurance and safety compliance",
+      "Real-time project monitoring and reporting",
+      "Risk management and contract administration"
     ],
-    "details": "We provide strategic consultancy to ensure your construction project succeeds from start to finish. Our team evaluates your project requirements, identifies potential risks, and develops comprehensive plans for timely and cost-effective execution."
+    "details": "We deliver end-to-end project management solutions for industrial plants, commercial buildings, infrastructure developments, and specialized engineering projects. Our EPCM approach provides expert management of engineering, procurement, and construction activities, while our EPC model offers complete turnkey project execution. With a focus on quality, safety, budget control, and timely completion, we help clients achieve successful project outcomes with minimal risk."
   },
   {
     "id": 2,
-    "title": "Architectural Planning",
-    "description": "Innovative and sustainable architectural designs tailored to your vision. We create designs that balance aesthetics with functionality and environmental sustainability.",
-    "image": "/service/constructionconsultation.png",
+    "title": "Architectural Designing",
+    "description": "Innovative and functional architectural design solutions for residential, commercial, industrial, and institutional projects. We create sustainable, aesthetically appealing, and space-efficient designs tailored to your vision and requirements.",
+    "image": "/service/architecturaldesigning.png",
     "icon": "architecture",
-    "overview": "Our architectural planning services transform your vision into stunning, functional designs. We specialize in creating spaces that blend beauty, sustainability, and practicality.",
+    "overview": "Our architectural designing services transform ideas into practical and visually stunning spaces. From concept development to detailed construction drawings, we focus on functionality, sustainability, compliance, and modern design principles to deliver exceptional results.",
     "process": [
-      "Understanding client vision and requirements",
-      "Conceptual design development",
-      "Detailed architectural drawings",
-      "3D visualization and rendering",
-      "Design refinement and approval"
+      "Client consultation and requirement analysis",
+      "Concept planning and space optimization",
+      "Architectural drawings and 3D visualization",
+      "Design refinement and regulatory approvals",
+      "Construction documentation and design support"
     ],
     "features": [
-      "Innovative design concepts",
-      "Sustainable building practices",
-      "Advanced CAD technology",
-      "3D visualization",
-      "Client-centered approach"
+      "Custom residential and commercial designs",
+      "2D plans and 3D architectural visualization",
+      "Modern, sustainable, and functional designs",
+      "Space planning and interior integration",
+      "Building by-law and code compliance",
+      "Complete architectural documentation"
     ],
-    "details": "We create architectural designs that stand the test of time. Our approach combines modern design principles with sustainable practices, ensuring your building is not only beautiful but also environmentally responsible and cost-effective."
+    "details": "We provide comprehensive architectural design services that combine creativity with engineering excellence. Our architects work closely with clients to develop designs that maximize functionality, aesthetics, and long-term value. Whether it's a home, office, industrial facility, educational institution, or mixed-use development, we deliver detailed architectural solutions that meet your budget, project goals, and regulatory requirements."
   },
   {
     "id": 3,
-    "title": "Structural Design",
-    "description": "Robust structural engineering ensuring safety and longevity of your projects. Our team uses advanced analysis tools to create structures that withstand all conditions.",
-    "image": "/service/constructionconsultation.png",
-    "icon": "structure",
-    "overview": "Structural design is the backbone of any construction project. We provide comprehensive structural engineering services using cutting-edge technology and best practices.",
+    "title": "3D Visualization & Engineering Design",
+    "description": "Professional 2D drafting, 3D visualization, BIM modeling, structural analysis, and engineering design services using industry-leading software including SketchUp, AutoCAD, Revit (BIM), STAAD.Pro, and ETABS.",
+    "image": "/service/3dvisualization.png",
+    "icon": "3d",
+    "overview": "We deliver high-quality architectural and engineering visualization services that help clients visualize projects before construction begins. Our team creates precise 2D drawings, realistic 3D models, Building Information Modeling (BIM), and performs advanced structural analysis to ensure safe, efficient, and cost-effective project execution.",
     "process": [
-      "Load analysis and calculations",
-      "Material selection and specifications",
-      "FEA (Finite Element Analysis)",
-      "Design optimization",
-      "Technical documentation and approval"
+      "Requirement analysis and project planning",
+      "2D drafting and detailed CAD drawings",
+      "3D modeling and realistic visualization",
+      "BIM coordination and clash detection",
+      "Structural analysis using STAAD.Pro & ETABS",
+      "Final design review and project delivery"
     ],
     "features": [
-      "Advanced structural analysis",
-      "Seismic design compliance",
-      "Material optimization",
-      "Durability assessment",
-      "Quality assurance"
+      "2D Architectural & Structural Drawings",
+      "3D Modeling and Photorealistic Visualization",
+      "SketchUp Design & Rendering",
+      "AutoCAD Drafting & Detailing",
+      "Building Information Modeling (BIM)",
+      "Structural Analysis using STAAD.Pro",
+      "Earthquake & Load Analysis with ETABS",
+      "Construction Documentation & Shop Drawings",
+      "High-Quality Presentation Renderings",
+      "Engineering Design Optimization"
     ],
-    "details": "Our structural engineers use advanced analysis software to design structures that are safe, efficient, and economical. We ensure all designs comply with building codes and withstand various environmental conditions."
+    "details": "Our visualization and engineering design services bridge the gap between concept and construction. Using advanced software such as AutoCAD, SketchUp, Revit (BIM), STAAD.Pro, and ETABS, we create accurate architectural drawings, detailed 3D models, intelligent BIM workflows, and perform comprehensive structural analysis. These solutions help clients identify design issues early, improve coordination, reduce project costs, and ensure compliance with engineering standards while delivering visually compelling project presentations."
   },
   {
     "id": 4,
-    "title": "Interior Design",
-    "description": "Elegant aesthetics combined with functional interior spaces that reflect your style. We transform spaces into beautiful, livable environments.",
-    "image": "/service/constructionconsultation.png",
-    "icon": "interior",
-    "overview": "Interior design is about creating spaces that work as beautifully as they look. Our designs reflect your personality while maximizing functionality and comfort.",
+    "title": "Structural Designing",
+    "description": "Comprehensive structural design solutions for residential, commercial, industrial, and infrastructure projects, ensuring safety, durability, efficiency, and compliance with national and international design standards.",
+    "image": "/service/structuraldesigning.png",
+    "icon": "structure",
+    "overview": "Our structural designing services focus on creating safe, economical, and high-performance structural systems. We design reinforced concrete (RCC), steel, composite, and foundation structures that withstand environmental and operational loads while optimizing construction costs and ensuring long-term reliability.",
     "process": [
-      "Space planning and analysis",
-      "Concept development",
-      "Color and material selection",
-      "Furniture and fixture planning",
-      "Implementation supervision"
+      "Project requirement analysis and site evaluation",
+      "Structural planning and load calculations",
+      "Detailed RCC and steel structural design",
+      "Structural analysis and code compliance verification",
+      "Preparation of structural drawings and BOQ",
+      "Construction support and design review"
     ],
     "features": [
-      "Personalized design concepts",
-      "Space optimization",
-      "Material and color expertise",
-      "Furniture curation",
-      "Implementation support"
+      "RCC Structural Design",
+      "Steel Structure Design",
+      "Foundation and Footing Design",
+      "Seismic & Wind Load Analysis",
+      "Industrial & Commercial Structural Design",
+      "Residential Building Structural Design",
+      "Structural Detailing & Reinforcement Drawings",
+      "Design Optimization for Cost Efficiency",
+      "Compliance with IS Codes and International Standards",
+      "Construction Support & Technical Consultation"
     ],
-    "details": "We create interior spaces that inspire and delight. Our designers combine aesthetic sensibilities with practical functionality to create environments that enhance your lifestyle and boost productivity."
+    "details": "We provide complete structural engineering solutions that ensure buildings and infrastructure are safe, stable, and durable. Our experienced structural engineers design RCC, steel, composite, and foundation systems using advanced engineering software and modern design methodologies. Every structure is analyzed for gravity, wind, and seismic loads while maintaining compliance with applicable standards. From concept design to construction support, we deliver reliable structural solutions that optimize material usage, reduce costs, and enhance overall project performance."
   },
   {
     "id": 5,
-    "title": "Project Management",
-    "description": "End-to-end execution, ensuring timely and on-budget delivery of your projects. Our project managers maintain quality and keep stakeholders informed throughout.",
-    "image": "/service/constructionconsultation.png",
-    "icon": "management",
-    "overview": "Professional project management ensures your construction project stays on track. We coordinate all aspects of your project for seamless execution.",
+    "title": "Auditing, Estimation & Costing",
+    "description": "Accurate project auditing, quantity estimation, and cost analysis services to ensure financial transparency, budget optimization, and successful project execution for residential, commercial, industrial, and infrastructure developments.",
+    "image": "/service/auditingestimationcosting.png",
+    "icon": "calculate",
+    "overview": "Our Auditing, Estimation & Costing services help clients plan and manage construction projects with confidence. We provide detailed quantity take-offs, cost estimates, project audits, budget planning, and financial evaluations to minimize risks, control expenses, and maximize project value.",
     "process": [
-      "Project planning and scheduling",
-      "Resource allocation",
-      "Progress tracking and reporting",
-      "Quality control",
-      "Issue resolution and optimization"
+      "Project scope and drawing review",
+      "Quantity take-off and material estimation",
+      "Preparation of detailed cost estimates and BOQ",
+      "Project cost auditing and financial analysis",
+      "Budget optimization and value engineering",
+      "Final reporting and cost control recommendations"
     ],
     "features": [
-      "Experienced project managers",
-      "Advanced project management tools",
-      "Regular reporting and updates",
-      "Risk mitigation strategies",
-      "Quality assurance protocols"
+      "Detailed Quantity Estimation",
+      "Bill of Quantities (BOQ) Preparation",
+      "Construction Cost Estimation",
+      "Project Cost Auditing",
+      "Budget Planning and Cost Control",
+      "Tender Documentation & Rate Analysis",
+      "Value Engineering Solutions",
+      "Material and Labor Cost Analysis",
+      "Financial Risk Assessment",
+      "Periodic Cost Monitoring & Reporting"
     ],
-    "details": "Our project management team brings years of experience in coordinating complex construction projects. We use industry-leading software and methodologies to ensure projects are completed on time, within budget, and to specification."
+    "details": "We provide professional auditing, estimation, and costing services that enable clients to make informed financial decisions throughout the project lifecycle. Our experts prepare accurate quantity estimates, detailed BOQs, and realistic project budgets while auditing construction costs to identify savings opportunities and ensure financial accountability. By combining technical expertise with cost engineering practices, we help deliver projects on time, within budget, and with complete transparency."
   },
   {
     "id": 6,
-    "title": "Site Inspection",
-    "description": "Rigorous quality checks and on-site engineering supervision to maintain highest standards. Regular inspections ensure compliance with specifications and regulations.",
-    "image": "/service/constructionconsultation.png",
-    "icon": "inspection",
-    "overview": "Quality assurance through comprehensive site inspections ensures your project meets the highest standards. Our inspectors verify compliance at every phase.",
+    "title": "Interior Designing & Execution",
+    "description": "End-to-end interior design and execution services for residential, commercial, hospitality, retail, and office spaces, combining creativity, functionality, and premium craftsmanship to create inspiring interiors.",
+    "image": "/service/interiordesigningexecution.png",
+    "icon": "interior",
+    "overview": "Our Interior Designing & Execution services transform empty spaces into elegant, functional, and personalized environments. From concept development and space planning to material selection, furniture design, lighting, and complete on-site execution, we deliver interiors that reflect your vision while ensuring quality, comfort, and timely completion.",
     "process": [
-      "Foundation inspection",
-      "Structural verification",
-      "Material testing",
-      "Safety compliance checks",
-      "Final quality assessment"
+      "Client consultation and requirement analysis",
+      "Space planning and concept development",
+      "3D interior visualization and design approval",
+      "Material, furniture, and lighting selection",
+      "On-site execution and quality supervision",
+      "Final inspection, handover, and post-completion support"
     ],
     "features": [
-      "Certified quality inspectors",
-      "Comprehensive testing protocols",
-      "Safety compliance verification",
-      "Detailed inspection reports",
-      "Non-destructive testing"
+      "Residential Interior Design",
+      "Commercial & Office Interiors",
+      "Retail & Hospitality Interior Solutions",
+      "Modular Kitchen & Wardrobe Design",
+      "False Ceiling & Lighting Design",
+      "Custom Furniture & Space Planning",
+      "3D Interior Visualization & Walkthroughs",
+      "Material Selection & Vendor Coordination",
+      "Turnkey Interior Execution",
+      "Quality Assurance & Timely Project Delivery"
     ],
-    "details": "We conduct rigorous inspections at every stage of construction to ensure quality and safety. Our certified inspectors use advanced testing methods to verify that all work meets specifications and building codes."
+    "details": "We provide comprehensive interior design and turnkey execution services that blend aesthetics with functionality. Our experienced designers work closely with clients to create customized interior solutions that enhance comfort, productivity, and visual appeal. From concept creation and 3D visualization to procurement, site supervision, and final installation, we manage every aspect of the project with precision, ensuring exceptional craftsmanship, budget control, and on-time delivery."
   },
   {
     "id": 7,
-    "title": "Estimation & Costing",
-    "description": "Precise budgeting and financial planning for your projects with detailed cost breakdowns. We help you understand every expense in your project.",
-    "image": "/service/constructionconsultation.png",
-    "icon": "costing",
-    "overview": "Accurate cost estimation is crucial for project success. Our detailed budgeting ensures you understand exactly where your money goes.",
+    "title": "MEP Designing & Execution",
+    "description": "Comprehensive Mechanical, Electrical, and Plumbing (MEP) design and execution services for residential, commercial, industrial, healthcare, and infrastructure projects, ensuring safety, efficiency, sustainability, and regulatory compliance.",
+    "image": "/service/mepdesigningexecution.png",
+    "icon": "engineering",
+    "overview": "Our MEP Designing & Execution services integrate mechanical, electrical, plumbing, fire protection, and HVAC systems into a coordinated solution that enhances building performance and occupant comfort. From design and planning to installation, testing, and commissioning, we deliver reliable MEP solutions tailored to your project requirements.",
     "process": [
-      "Detailed quantity surveying",
-      "Material cost analysis",
-      "Labor cost estimation",
-      "Overhead and contingency planning",
-      "Budget monitoring and updates"
+      "Project requirement analysis and site assessment",
+      "MEP system planning and detailed engineering design",
+      "BIM coordination and clash detection",
+      "Equipment selection and procurement support",
+      "Installation, testing, and quality inspection",
+      "Commissioning, handover, and maintenance support"
     ],
     "features": [
-      "Detailed cost breakdowns",
-      "Market rate analysis",
-      "Contingency planning",
-      "Budget tracking",
-      "Value engineering"
+      "HVAC System Design & Installation",
+      "Electrical Power & Lighting Design",
+      "Plumbing & Drainage System Design",
+      "Fire Fighting & Fire Alarm Systems",
+      "Building Management System (BMS) Integration",
+      "MEP BIM Coordination & Clash Detection",
+      "Energy-Efficient and Sustainable Solutions",
+      "Testing & Commissioning Services",
+      "Compliance with National & International Standards",
+      "Turnkey MEP Execution and Project Management"
     ],
-    "details": "Our quantity surveyors provide detailed, transparent cost estimates that help you plan your budget effectively. We analyze material costs, labor rates, and market conditions to give you accurate projections."
+    "details": "We provide end-to-end MEP engineering solutions that ensure buildings operate safely, efficiently, and sustainably. Our multidisciplinary team designs and executes HVAC, electrical, plumbing, fire protection, and low-voltage systems using modern engineering practices and BIM technology. We focus on seamless coordination between architectural, structural, and MEP disciplines to reduce construction conflicts, optimize costs, improve energy efficiency, and deliver high-quality installations that meet all applicable codes and standards."
   },
   {
     "id": 8,
-    "title": "3D Visualization",
-    "description": "Photorealistic renders and walkthroughs before construction begins. Visualize your project before breaking ground with stunning 3D models.",
-    "image": "/service/constructionconsultation.png",
-    "icon": "visualization",
-    "overview": "See your project before it's built with stunning 3D visualizations. Our renderings help you make informed decisions about design and materials.",
+    "title": "Solar Plant Designing & Execution",
+    "description": "End-to-end solar power plant design, engineering, procurement, installation, and commissioning services for residential, commercial, industrial, and utility-scale projects, delivering sustainable and cost-effective energy solutions.",
+    "image": "/service/solarplantdesigningexecution.png",
+    "icon": "solar",
+    "overview": "Our Solar Plant Designing & Execution services provide complete EPC solutions for rooftop and ground-mounted solar photovoltaic (PV) systems. From site assessment and system design to installation, testing, and commissioning, we ensure maximum energy generation, long-term reliability, and compliance with industry standards.",
     "process": [
-      "3D model creation",
-      "Material and texture application",
-      "Lighting design",
-      "Camera positioning",
-      "Final rendering and animation"
+      "Site survey and energy requirement analysis",
+      "Solar feasibility study and system sizing",
+      "Engineering design and electrical layout preparation",
+      "Procurement of solar modules, inverters, and BOS components",
+      "Installation, testing, and commissioning",
+      "Performance monitoring, maintenance, and project handover"
     ],
     "features": [
-      "Photorealistic renderings",
-      "Virtual walkthroughs",
-      "Material visualization",
-      "Lighting analysis",
-      "Animation sequences"
+      "Rooftop & Ground-Mounted Solar PV Systems",
+      "On-Grid, Off-Grid & Hybrid Solar Solutions",
+      "Solar Plant Design & Engineering",
+      "Energy Yield Analysis & Performance Optimization",
+      "Electrical Design & Grid Synchronization",
+      "High-Quality Solar Equipment Procurement",
+      "Testing, Commissioning & Performance Validation",
+      "Operation & Maintenance (O&M) Support",
+      "Compliance with MNRE & International Standards",
+      "Complete Turnkey Solar EPC Solutions"
     ],
-    "details": "Our 3D visualization team creates stunning, photorealistic renderings that bring your project to life. These visualizations help stakeholders understand the design intent and make informed decisions before construction begins."
+    "details": "We provide comprehensive Solar EPC services that help clients transition to clean and renewable energy. Our experienced engineers design and execute high-performance solar power plants tailored to your energy requirements and site conditions. Using advanced engineering tools and premium-quality components, we deliver efficient, reliable, and cost-effective solar solutions with a strong focus on safety, sustainability, and long-term performance. From concept to commissioning and ongoing maintenance, we manage every stage of your solar project with precision and expertise."
+  },
+  {
+    "id": 9,
+    "title": "HVAC Designing & Execution",
+    "description": "Comprehensive Heating, Ventilation, and Air Conditioning (HVAC) design and execution services for residential, commercial, industrial, healthcare, hospitality, and institutional projects, ensuring energy-efficient, comfortable, and sustainable indoor environments.",
+    "image": "/service/hvacdesigningexecution.png",
+    "icon": "hvac",
+    "overview": "Our HVAC Designing & Execution services provide complete solutions for climate control systems, from load calculations and duct design to equipment selection, installation, testing, and commissioning. We focus on delivering energy-efficient, reliable, and cost-effective HVAC systems that meet industry standards and client requirements.",
+    "process": [
+      "Site assessment and cooling/heating load calculation",
+      "HVAC system planning and detailed engineering design",
+      "Ducting, piping, and ventilation layout preparation",
+      "Equipment selection and procurement support",
+      "Installation, testing, balancing, and commissioning",
+      "Performance evaluation, handover, and maintenance support"
+    ],
+    "features": [
+      "Centralized & VRF/VRV Air Conditioning Systems",
+      "Heating, Ventilation & Exhaust System Design",
+      "Ducting & Piping Design",
+      "HVAC Load Calculations and Equipment Selection",
+      "Energy-Efficient HVAC Solutions",
+      "Clean Room & Industrial Ventilation Systems",
+      "Testing, Adjusting & Balancing (TAB)",
+      "Building Management System (BMS) Integration",
+      "Preventive Maintenance & AMC Support",
+      "Complete Turnkey HVAC Execution"
+    ],
+    "details": "We deliver end-to-end HVAC engineering solutions designed to provide superior indoor air quality, thermal comfort, and energy efficiency. Our team specializes in designing and executing centralized air conditioning, VRF/VRV systems, ventilation, exhaust, and industrial HVAC solutions using modern engineering practices and international standards. From concept and detailed engineering to installation, testing, commissioning, and maintenance, we ensure every HVAC system operates safely, efficiently, and reliably throughout its lifecycle."
+  },
+  {
+    "id": 10,
+    "title": "Furnace Designing & Execution",
+    "description": "Comprehensive furnace design, engineering, fabrication, installation, and commissioning services for industrial heating applications. We deliver energy-efficient, reliable, and high-performance furnace solutions tailored to your manufacturing processes.",
+    "image": "/service/furnacedesigningexecution.png",
+    "icon": "furnace",
+    "overview": "Our Furnace Designing & Execution services provide complete EPC solutions for industrial furnaces used in steel, foundry, cement, ceramics, glass, forging, heat treatment, and other process industries. From concept and thermal design to fabrication, installation, testing, and commissioning, we ensure safe, efficient, and long-lasting furnace systems.",
+    "process": [
+      "Process requirement analysis and thermal calculations",
+      "Furnace design and engineering",
+      "Selection of refractory materials, burners, and control systems",
+      "Fabrication, installation, and equipment integration",
+      "Testing, commissioning, and performance validation",
+      "Operation training, maintenance, and technical support"
+    ],
+    "features": [
+      "Industrial Furnace Design & Engineering",
+      "Heat Treatment Furnaces",
+      "Reheating & Annealing Furnaces",
+      "Melting & Forging Furnace Solutions",
+      "Gas, Oil & Electric Furnace Systems",
+      "Combustion System Design & Optimization",
+      "Thermal Efficiency Improvement",
+      "PLC & Automation Integration",
+      "Testing, Commissioning & Performance Optimization",
+      "Complete Turnkey Furnace EPC Solutions"
+    ],
+    "details": "We provide end-to-end furnace engineering and execution services for a wide range of industrial applications. Our experienced engineers design customized furnace systems that maximize thermal efficiency, reduce fuel consumption, and ensure consistent process performance. From engineering and equipment selection to fabrication, installation, commissioning, and after-sales support, we deliver reliable furnace solutions that comply with industry standards while improving productivity, operational safety, and long-term cost efficiency."
+  },
+  {
+    "id": 11,
+    "title": "Clean Room Partition",
+    "description": "Professional clean room partition design, supply, and installation services for pharmaceutical, healthcare, biotechnology, electronics, food processing, and industrial facilities, ensuring contamination control and compliance with clean room standards.",
+    "image": "/service/cleanroompartition.png",
+    "icon": "cleanroom",
+    "overview": "Our Clean Room Partition services provide customized modular partition systems that create controlled environments with superior hygiene, durability, and operational efficiency. We design and install clean room wall and ceiling systems that meet ISO and GMP standards while supporting efficient workflow and contamination control.",
+    "process": [
+      "Site inspection and requirement analysis",
+      "Clean room layout planning and design",
+      "Selection of modular partition panels and accessories",
+      "Installation of wall, ceiling, doors, and viewing panels",
+      "Quality inspection, sealing, and performance testing",
+      "Final handover and maintenance support"
+    ],
+    "features": [
+      "Modular Clean Room Partition Systems",
+      "PUF & Rockwool Sandwich Panel Installation",
+      "GMP & ISO-Compliant Clean Room Solutions",
+      "Clean Room Doors, Windows & Viewing Panels",
+      "False Ceiling & Panel Integration",
+      "Air-Tight and Dust-Free Construction",
+      "Easy-to-Clean Hygienic Surfaces",
+      "Custom Layouts for Pharma, Healthcare & Electronics",
+      "Quick Installation with Minimal Downtime",
+      "Complete Turnkey Clean Room Solutions"
+    ],
+    "details": "We provide complete clean room partition solutions designed to maintain controlled environments for industries where hygiene and contamination control are critical. Our modular partition systems are manufactured using high-quality insulated panels and precision-engineered components, ensuring excellent thermal insulation, durability, and airtight performance. From design and material selection to installation and validation, we deliver clean room solutions that comply with ISO, GMP, and industry-specific standards while enhancing operational efficiency and product quality."
+  },
+  {
+    "id": 12,
+    "title": "Industrial Flooring (Epoxy, PU Flooring & More)",
+    "description": "Specialized industrial flooring solutions including Epoxy, Polyurethane (PU), ESD, anti-skid, and heavy-duty flooring systems for manufacturing plants, warehouses, pharmaceuticals, food processing units, healthcare facilities, and commercial spaces.",
+    "image": "/service/industrialflooring.png",
+    "icon": "flooring",
+    "overview": "Our Industrial Flooring services deliver durable, seamless, and high-performance flooring systems designed to withstand heavy traffic, chemical exposure, abrasion, and demanding industrial environments. We provide complete design, surface preparation, application, and quality assurance to ensure long-lasting performance and minimal maintenance.",
+    "process": [
+      "Site inspection and floor condition assessment",
+      "Surface preparation and substrate repair",
+      "Selection of the appropriate flooring system",
+      "Primer, base coat, and finish coat application",
+      "Quality inspection, curing, and testing",
+      "Final handover with maintenance guidelines"
+    ],
+    "features": [
+      "Epoxy Flooring Systems",
+      "PU (Polyurethane) Flooring",
+      "Self-Leveling Industrial Floors",
+      "Anti-Static (ESD) Flooring",
+      "Anti-Skid & Slip-Resistant Flooring",
+      "Chemical & Abrasion Resistant Coatings",
+      "Heavy-Duty Warehouse & Factory Flooring",
+      "Food Grade & Pharmaceutical Flooring",
+      "Decorative & Commercial Flooring Solutions",
+      "Repair, Renovation & Maintenance Services"
+    ],
+    "details": "We provide end-to-end industrial flooring solutions for a wide range of industries, including pharmaceuticals, food processing, automotive, electronics, logistics, manufacturing, healthcare, and commercial facilities. Our expert team installs premium-quality Epoxy, Polyurethane (PU), ESD, and specialty flooring systems that offer exceptional durability, hygiene, chemical resistance, and aesthetic appeal. Every flooring solution is customized to meet operational requirements, safety regulations, and industry standards, ensuring long-term performance, easy maintenance, and maximum return on investment."
+  },
+  {
+    "id": 13,
+    "title": "Water Treatment (RO) & Wastewater Treatment (ETP, STP, ZLD)",
+    "description": "Complete design, engineering, procurement, installation, and commissioning of Water Treatment Plants (WTP), Reverse Osmosis (RO) Systems, Effluent Treatment Plants (ETP), Sewage Treatment Plants (STP), and Zero Liquid Discharge (ZLD) solutions for industrial, commercial, and municipal applications.",
+    "image": "/service/watertreatment.png",
+    "icon": "water",
+    "overview": "Our Water Treatment & Wastewater Treatment services provide sustainable and efficient solutions for water purification, wastewater recycling, and environmental compliance. We design and execute customized treatment systems that optimize water usage, reduce operational costs, and ensure compliance with CPCB, SPCB, and international environmental standards.",
+    "process": [
+      "Water quality assessment and project feasibility study",
+      "Process design and system engineering",
+      "Equipment selection and procurement",
+      "Plant fabrication, installation, and piping works",
+      "Testing, commissioning, and performance validation",
+      "Operation, maintenance, and technical support"
+    ],
+    "features": [
+      "Reverse Osmosis (RO) Water Treatment Systems",
+      "Water Treatment Plants (WTP)",
+      "Effluent Treatment Plants (ETP)",
+      "Sewage Treatment Plants (STP)",
+      "Zero Liquid Discharge (ZLD) Systems",
+      "Ultrafiltration (UF) & Softening Plants",
+      "Industrial Wastewater Recycling Solutions",
+      "Automation & PLC-Based Plant Control",
+      "Energy-Efficient Water Treatment Technologies",
+      "Turnkey EPC Solutions with AMC & O&M Support"
+    ],
+    "details": "We provide comprehensive EPC solutions for water and wastewater treatment plants across industries including pharmaceuticals, food & beverage, textiles, chemicals, power plants, healthcare, manufacturing, and commercial facilities. Our expertise covers RO systems, WTP, ETP, STP, and ZLD plants designed to maximize water recovery, minimize environmental impact, and ensure regulatory compliance. From concept and process engineering to installation, commissioning, automation, and long-term operation & maintenance, we deliver reliable, efficient, and sustainable water management solutions tailored to your specific requirements."
+  },
+  {
+    "id": 14,
+    "title": "Facade Designing & Execution",
+    "description": "Comprehensive facade design, engineering, fabrication, and installation services for commercial, residential, industrial, hospitality, and institutional buildings, delivering aesthetically appealing, energy-efficient, and durable building exteriors.",
+    "image": "/service/facadedesigningexecution.png",
+    "icon": "facade",
+    "overview": "Our Facade Designing & Execution services combine architectural creativity with engineering excellence to create modern, high-performance building envelopes. We provide end-to-end solutions, from conceptual facade design and structural analysis to fabrication, installation, testing, and maintenance, ensuring superior aesthetics, safety, and long-term performance.",
+    "process": [
+      "Site assessment and project requirement analysis",
+      "Conceptual facade design and material selection",
+      "Detailed engineering, structural analysis, and shop drawings",
+      "Fabrication and quality inspection",
+      "On-site installation and system integration",
+      "Testing, commissioning, and project handover"
+    ],
+    "features": [
+      "Glass Curtain Wall Systems",
+      "Aluminium Composite Panel (ACP) Facades",
+      "Structural Glazing Systems",
+      "Unitized & Semi-Unitized Facades",
+      "Spider Glazing & Frameless Glass Systems",
+      "Aluminium Louvers & Cladding Systems",
+      "Ventilated & Energy-Efficient Facades",
+      "Custom Architectural Facade Solutions",
+      "Facade Maintenance & Renovation",
+      "Complete Turnkey Facade EPC Solutions"
+    ],
+    "details": "We deliver innovative facade solutions that enhance the visual appeal, energy efficiency, and structural performance of buildings. Our experienced architects and engineers design and execute curtain walls, structural glazing, ACP cladding, aluminium facade systems, and custom architectural exteriors using premium materials and advanced engineering techniques. Every facade is designed to withstand environmental conditions while providing thermal insulation, weather resistance, natural lighting, and long-term durability. From concept to completion, we ensure quality craftsmanship, regulatory compliance, and timely project delivery."
+  },
+  {
+    "id": 15,
+    "title": "Pollution Air Control Systems",
+    "description": "Complete design, engineering, supply, installation, and commissioning of air pollution control systems for industrial and commercial facilities, ensuring clean emissions, regulatory compliance, and sustainable operations.",
+    "image": "/service/pollutionaircontrol.png",
+    "icon": "air",
+    "overview": "Our Pollution Air Control services provide advanced solutions to monitor, capture, filter, and control industrial air pollutants. We design customized air pollution control systems that improve workplace air quality, reduce environmental impact, and ensure compliance with CPCB, SPCB, and international environmental standards.",
+    "process": [
+      "Site inspection and emission source assessment",
+      "Air quality analysis and system design",
+      "Equipment selection and engineering",
+      "Fabrication, installation, and integration",
+      "Testing, commissioning, and performance validation",
+      "Operation, maintenance, and compliance support"
+    ],
+    "features": [
+      "Dust Collection Systems",
+      "Bag Filter & Baghouse Systems",
+      "Cyclone Separators",
+      "Wet & Dry Scrubber Systems",
+      "Electrostatic Precipitators (ESP)",
+      "Fume & Smoke Extraction Systems",
+      "Industrial Ventilation & Exhaust Systems",
+      "Air Filtration & Odor Control Solutions",
+      "Emission Monitoring & Compliance Support",
+      "Complete Turnkey Air Pollution Control Solutions"
+    ],
+    "details": "We provide end-to-end Air Pollution Control solutions for manufacturing plants, power plants, cement industries, pharmaceuticals, food processing, foundries, steel plants, chemical industries, and other industrial facilities. Our experienced engineers design and implement efficient dust collection, gas cleaning, fume extraction, and emission control systems that improve workplace safety, reduce environmental pollution, and comply with applicable environmental regulations. From engineering and equipment selection to installation, commissioning, and long-term maintenance, we deliver reliable, energy-efficient, and sustainable pollution control solutions."
+  },
+  {
+    "id": 16,
+    "title": "Green Building Solutions",
+    "description": "Sustainable green building design, engineering, and execution services that enhance energy efficiency, conserve natural resources, reduce environmental impact, and create healthier, high-performance buildings.",
+    "image": "/service/greenbuildings.png",
+    "icon": "eco",
+    "overview": "Our Green Building Solutions integrate sustainable design principles, energy-efficient technologies, and environmentally responsible construction practices to deliver buildings that are efficient, cost-effective, and future-ready. We assist clients throughout the entire project lifecycle, from planning and certification to execution and performance optimization.",
+    "process": [
+      "Sustainability assessment and project planning",
+      "Energy modeling and green building design",
+      "Selection of eco-friendly materials and technologies",
+      "Water conservation and renewable energy integration",
+      "Construction monitoring and quality assurance",
+      "Green building certification support and project handover"
+    ],
+    "features": [
+      "IGBC, GRIHA & LEED Green Building Consultancy",
+      "Energy-Efficient Building Design",
+      "Sustainable Material Selection",
+      "Water Conservation & Rainwater Harvesting",
+      "Solar Energy Integration",
+      "HVAC & MEP Energy Optimization",
+      "Building Energy Modeling",
+      "Indoor Air Quality Enhancement",
+      "Waste Management & Resource Optimization",
+      "Complete Turnkey Green Building Solutions"
+    ],
+    "details": "We provide comprehensive Green Building Solutions that combine innovative engineering with sustainable construction practices to create environmentally responsible buildings. Our services include energy-efficient architectural planning, optimized MEP systems, renewable energy integration, water management, sustainable material selection, and support for IGBC, GRIHA, and LEED certifications. Whether it's a residential, commercial, industrial, healthcare, or institutional project, we help clients reduce operating costs, minimize carbon emissions, improve occupant well-being, and achieve long-term sustainability goals."
   }
 ]
-
