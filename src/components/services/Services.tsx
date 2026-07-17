@@ -31,6 +31,7 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import ThreeDRotationIcon from '@mui/icons-material/ThreeDRotation';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import MessageIcon from '@mui/icons-material/Message';
+import EngineeringIcon from '@mui/icons-material/Engineering';
 
 const iconMap: { [key: string]: IconComponent } = {
   'construction': MapsHomeWorkIcon,
@@ -40,7 +41,8 @@ const iconMap: { [key: string]: IconComponent } = {
   'management': ManageHistoryIcon,
   'inspection': PlumbIcon,
   'costing': AccountBalanceWalletIcon,
-  'visualization': ThreeDRotationIcon
+  'visualization': ThreeDRotationIcon,
+  'engineering': EngineeringIcon
 };
 
 export default function Services() {
