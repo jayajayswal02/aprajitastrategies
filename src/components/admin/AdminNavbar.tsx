@@ -42,7 +42,7 @@ export default function AdminNavbar() {
         <Link href="/admin/dashboard" className={styles.logo}>
           <Image
             src={Logo}
-            alt="Aprajita Strategies"
+            alt="APRAJITA STRATEGICS PRIVATE LIMITED"
             width={45}
             height={45}
             className={styles.logoImg}

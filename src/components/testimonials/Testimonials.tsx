@@ -9,13 +9,13 @@ const reviews = [
   {
     name: 'Rajesh Kumar',
     role: 'CEO, Mumbai Enterprises',
-    text: 'Aprajita Strategies transformed our vision into an architectural masterpiece. The structural integrity and attention to detail were second to none.',
+    text: 'APRAJITA STRATEGICS PRIVATE LIMITED transformed our vision into an architectural masterpiece. The structural integrity and attention to detail were second to none.',
     rating: 5
   },
   {
     name: 'Priya Sharma',
     role: 'Property Developer, Delhi',
-    text: 'Working with the Aprajita Strategies team was seamless. Their project management kept us on budget while delivering premium results.',
+    text: 'Working with the APRAJITA STRATEGICS PRIVATE LIMITED team was seamless. Their project management kept us on budget while delivering premium results.',
     rating: 5
   },
   {

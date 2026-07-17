@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './FloatingWhatsApp.module.css';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import contactData from '../../data/contact.json';
+import { contactData } from '../../data/contact';
 
 export default function FloatingWhatsApp() {
   const pathname = usePathname();

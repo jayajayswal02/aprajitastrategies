@@ -41,8 +41,8 @@ export default function About() {
   ];
 
   const expertise = [
-    { title: "Structural Engineering", description: "Advanced structural analysis and design for residential and commercial projects" },
     { title: "Architectural Planning", description: "Innovative designs that blend aesthetics with functionality" },
+    { title: "Structural Engineering", description: "Advanced structural analysis and design for residential and commercial projects" },
     { title: "Project Management", description: "Seamless coordination from conception to completion" },
     { title: "Sustainability", description: "Eco-friendly solutions for modern construction challenges" },
     { title: "BIM Technology", description: "Building Information Modeling for precision and efficiency" },
@@ -56,12 +56,12 @@ export default function About() {
         <div className={styles.overviewCenter}>
           <SectionTitle 
             alignment="center"
-            subtitle="About Aprajita Strategies" 
+            subtitle="About APRAJITA STRATEGICS PRIVATE LIMITED" 
             title="Shaping the Future with Precision & Elegance" 
           />
           
           <p className={styles.descriptionCenter}>
-            Aprajita Strategies is a premier architectural and construction consultancy dedicated to transforming visionary ideas into structural realities. With over 15 years of excellence in the industry, we have established ourselves as leaders in delivering world-class engineering and planning solutions that exceed client expectations.
+            APRAJITA STRATEGICS PRIVATE LIMITED is a premier architectural and construction consultancy dedicated to transforming visionary ideas into structural realities. With over 15 years of excellence in the industry, we have established ourselves as leaders in delivering world-class engineering and planning solutions that exceed client expectations.
           </p>
           
           <p className={styles.descriptionCenter}>
@@ -120,7 +120,7 @@ export default function About() {
         {/* Key Strengths */}
         <div className={styles.strengthsSection}>
           <div className={styles.strengthsContent}>
-            <h2 className={styles.sectionHeading}>Why Choose Aprajita Strategies?</h2>
+            <h2 className={styles.sectionHeading}>Why Choose APRAJITA STRATEGICS PRIVATE LIMITED?</h2>
             
             <ul className={styles.featureList}>
               {features.map((feature, idx) => (

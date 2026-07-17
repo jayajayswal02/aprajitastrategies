@@ -1,0 +1,9 @@
+export const contactData = {
+  address: "APRAJITA STRATEGICS PRIVATE LIMITED, Ramji Prasad, Near Mata Vaishno Devi, Ratu, Ranchi, Jharkhand-835222",
+  phone: "8001820834",
+  phoneWithCountryCode: "+91 8001820834",
+  email: "contact@aprajitastrategies.com",
+  workingHours: "Mon - Fri: 9:00 AM - 6:00 PM",
+  whatsapp: "918001820834",
+  countryCode: "+91",
+} as const;

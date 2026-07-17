@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import styles from './Footer.module.css';
 import Logo from '../../../public/logoORANGE.png';
-import contactData from '../../data/contact.json';
+import { contactData } from '../../data/contact';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
@@ -33,7 +33,7 @@ export default function Footer() {
                 height={60}
                 className={styles.logo}
               />
-              <h3 className={styles.brand}>Aprajita Strategies</h3>
+              <h3 className={styles.brand}>APRAJITA STRATEGICS PRIVATE LIMITED</h3>
             </div>
             <p className={styles.desc}>
               Premium construction consultancy bringing your vision to reality with elegant, 
@@ -76,7 +76,7 @@ export default function Footer() {
         
         <div className={styles.bottom}>
           <div className={styles.bottomContent}>
-            <p>&copy; {new Date().getFullYear()} Aprajita Strategies Construction Consultancy. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} APRAJITA STRATEGICS PRIVATE LIMITED Construction Consultancy. All rights reserved.</p>
             <Link href="/admin/login" className={styles.adminBtn}>
               <LockIcon /> Admin Login
             </Link>

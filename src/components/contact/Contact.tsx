@@ -10,7 +10,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ErrorIcon from '@mui/icons-material/Error';
-import contactData from '../../data/contact.json';
+import { contactData } from '../../data/contact';
 import { submitContact } from '../../lib/supabase';
 
 export default function Contact() {

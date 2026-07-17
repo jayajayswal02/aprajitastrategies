@@ -19,7 +19,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Aprajita Strategies | Premium Construction Consultancy',
+  title: 'APRAJITA STRATEGICS PRIVATE LIMITED | Premium Construction Consultancy',
   description: 'Modern construction consultancy brand focusing on elegant and sustainable planning.',
 };
 

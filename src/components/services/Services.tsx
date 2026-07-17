@@ -32,6 +32,16 @@ import ThreeDRotationIcon from '@mui/icons-material/ThreeDRotation';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import MessageIcon from '@mui/icons-material/Message';
 import EngineeringIcon from '@mui/icons-material/Engineering';
+import CalculateIcon from '@mui/icons-material/Calculate';
+import SolarPowerIcon from '@mui/icons-material/SolarPower';
+import AcUnitIcon from '@mui/icons-material/AcUnit';
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+import CleaningServicesIcon from '@mui/icons-material/CleaningServices';
+import GridViewIcon from '@mui/icons-material/GridView';
+import OpacityIcon from '@mui/icons-material/Opacity';
+import ApartmentIcon from '@mui/icons-material/Apartment';
+import AirIcon from '@mui/icons-material/Air';
+import NatureIcon from '@mui/icons-material/Nature';
 
 const iconMap: { [key: string]: IconComponent } = {
   'construction': MapsHomeWorkIcon,
@@ -42,7 +52,18 @@ const iconMap: { [key: string]: IconComponent } = {
   'inspection': PlumbIcon,
   'costing': AccountBalanceWalletIcon,
   'visualization': ThreeDRotationIcon,
-  'engineering': EngineeringIcon
+  '3d': ThreeDRotationIcon,
+  'engineering': EngineeringIcon,
+  'calculate': CalculateIcon,
+  'solar': SolarPowerIcon,
+  'hvac': AcUnitIcon,
+  'furnace': LocalFireDepartmentIcon,
+  'cleanroom': CleaningServicesIcon,
+  'flooring': GridViewIcon,
+  'water': OpacityIcon,
+  'facade': ApartmentIcon,
+  'air': AirIcon,
+  'eco': NatureIcon
 };
 
 export default function Services() {

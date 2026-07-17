@@ -28,9 +28,9 @@ export default function Home() {
   const jsonLdData = {
     "@context": "https://schema.org",
     "@type": "ConstructionCompany",
-    "name": "Aprajita Strategies",
-    "image": "https://Aprajita Strategies.com/logo.png",
-    "url": "https://Aprajita Strategies.com",
+    "name": "APRAJITA STRATEGICS PRIVATE LIMITED",
+    "image": "https://AprajitaStrategies.com/logo.png",
+    "url": "https://AprajitaStrategies.com",
     "telephone": "+12345678901",
     "address": {
       "@type": "PostalAddress",

@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
     <section className={`section-spacing ${styles.whyUs}`}>
       <Container>
         <SectionTitle 
-          subtitle="The Aprajita Strategies Advantage"
+          subtitle="The APRAJITA STRATEGICS PRIVATE LIMITED Advantage"
           title="Why Partner With Us?"
           dark
         />

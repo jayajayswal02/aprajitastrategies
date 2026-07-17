@@ -54,7 +54,7 @@ export default function AdminLogin() {
         <div className={styles.header}>
           <Image
             src="/logoORANGE.png"
-            alt="Aprajita Strategies Logo"
+            alt="APRAJITA STRATEGICS PRIVATE LIMITED Logo"
             width={80}
             height={80}
             className={styles.logo}
