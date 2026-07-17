@@ -42,6 +42,7 @@ import OpacityIcon from '@mui/icons-material/Opacity';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import AirIcon from '@mui/icons-material/Air';
 import NatureIcon from '@mui/icons-material/Nature';
+import WaterDropIcon from '@mui/icons-material/WaterDrop';
 
 const iconMap: { [key: string]: IconComponent } = {
   'construction': MapsHomeWorkIcon,
@@ -61,6 +62,7 @@ const iconMap: { [key: string]: IconComponent } = {
   'cleanroom': CleaningServicesIcon,
   'flooring': GridViewIcon,
   'water': OpacityIcon,
+  'water_drop': WaterDropIcon,
   'facade': ApartmentIcon,
   'air': AirIcon,
   'eco': NatureIcon

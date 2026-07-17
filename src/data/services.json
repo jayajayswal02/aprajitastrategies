@@ -452,5 +452,34 @@
       "Complete Turnkey Green Building Solutions"
     ],
     "details": "We provide comprehensive Green Building Solutions that combine innovative engineering with sustainable construction practices to create environmentally responsible buildings. Our services include energy-efficient architectural planning, optimized MEP systems, renewable energy integration, water management, sustainable material selection, and support for IGBC, GRIHA, and LEED certifications. Whether it's a residential, commercial, industrial, healthcare, or institutional project, we help clients reduce operating costs, minimize carbon emissions, improve occupant well-being, and achieve long-term sustainability goals."
+  },
+  {
+    "id": 17,
+    "title": "Waterproofing Solutions",
+    "description": "Comprehensive waterproofing design, treatment, and protection services that prevent water leakage, enhance structural durability, extend building life, and safeguard residential, commercial, and industrial structures.",
+    "image": "/service/waterproofing.png",
+    "icon": "water_drop",
+    "overview": "Our Waterproofing Solutions provide advanced protection against water ingress through high-quality materials, proven application techniques, and expert execution. We offer end-to-end waterproofing services for new constructions as well as renovation projects, ensuring long-lasting performance and structural integrity.",
+    "process": [
+      "Site inspection and leakage assessment",
+      "Surface preparation and defect rectification",
+      "Selection of suitable waterproofing system",
+      "Application of waterproofing membranes and coatings",
+      "Quality inspection and water ponding testing",
+      "Project completion, maintenance guidance, and warranty support"
+    ],
+    "features": [
+      "Terrace Waterproofing",
+      "Basement Waterproofing",
+      "Roof Waterproofing Systems",
+      "Bathroom & Toilet Waterproofing",
+      "Swimming Pool Waterproofing",
+      "Water Tank Waterproofing",
+      "Retaining Wall Waterproofing",
+      "Podium & Balcony Waterproofing",
+      "Crack Injection & Leakage Repair",
+      "Complete Turnkey Waterproofing Solutions"
+    ],
+    "details": "We deliver reliable Waterproofing Solutions using industry-approved materials and advanced application techniques to protect buildings from water damage, seepage, dampness, and structural deterioration. Our services include terrace, roof, basement, bathroom, water tank, swimming pool, retaining wall, and foundation waterproofing, along with crack injection, expansion joint treatment, and protective coatings. Suitable for residential, commercial, industrial, healthcare, and institutional projects, our waterproofing solutions improve structural longevity, reduce maintenance costs, and ensure long-term protection against moisture-related issues."
   }
 ]
