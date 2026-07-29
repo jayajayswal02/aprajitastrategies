@@ -167,8 +167,6 @@ export default function Footer() {
         <div className={styles.bottom}>
           <p>&copy; {currentYear} APRAJITA STRATEGICS PRIVATE LIMITED. All rights reserved.</p>
           <div className={styles.bottomLinks}>
-            <Link href="/#about">About</Link>
-            <Link href="/#contact">Contact</Link>
             <Link href="/admin/login" className={styles.adminBtn}>
               <LockIcon /> Admin Login
             </Link>
