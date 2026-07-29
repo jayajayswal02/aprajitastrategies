@@ -5,11 +5,12 @@ export const generateMetadata = (
   description: string,
   path: string = ''
 ): Metadata => {
-  const url = `https://AprajitaStrategies.com${path}`;
-  
+  const url = `https://www.aprajitastrategics.com${path}`;
+
   return {
     title: `${title} | APRAJITA STRATEGICS PRIVATE LIMITED`,
     description,
+    metadataBase: new URL('https://www.aprajitastrategics.com'),
     alternates: {
       canonical: url,
     },
@@ -17,10 +18,10 @@ export const generateMetadata = (
       title,
       description,
       url,
-      siteName: 'APRAJITA STRATEGICS PRIVATE LIMITED Construction Consultancy',
+      siteName: 'APRAJITA STRATEGICS PRIVATE LIMITED',
       images: [
         {
-          url: 'https://AprajitaStrategies.com/og-image.jpg', // Placeholder
+          url: '/og-image.svg',
           width: 1200,
           height: 630,
           alt: title,
@@ -33,7 +34,7 @@ export const generateMetadata = (
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://AprajitaStrategies.com/og-image.jpg'], // Placeholder
+      images: ['/og-image.svg'],
     },
     robots: {
       index: true,

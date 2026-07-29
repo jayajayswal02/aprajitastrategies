@@ -6,6 +6,8 @@ import Image from 'next/image';
 import Container from '@/components/common/Container';
 import Button from '@/components/common/Button';
 import EnquiryModal from '@/components/common/EnquiryModal';
+import JsonLd from '@/components/seo/JsonLd';
+import { getBreadcrumbSchema, getProjectSchema } from '@/components/seo/structuredData';
 import projectsData from '@/data/projects.json';
 import styles from './ProjectDetail.module.css';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -69,8 +71,24 @@ export default function ProjectDetail({ params }: { params: Promise<{ id: string
     setShowEnquiryModal(false);
   };
 
+  const projectSchema = getProjectSchema({
+    title: project.title,
+    location: project.location,
+    details: project.details,
+    slug: createSlug(project.title),
+    image: project.image,
+  });
+
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.aprajitastrategics.com/' },
+    { name: 'Projects', url: 'https://www.aprajitastrategics.com/#projects' },
+    { name: project.title, url: `https://www.aprajitastrategics.com/projects/${createSlug(project.title)}` },
+  ]);
+
   return (
     <div className={styles.projectDetail}>
+      <JsonLd data={projectSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Container>
         <Link href="/#projects" className={styles.backLink}>
           <ArrowBackIcon /> Back to Projects

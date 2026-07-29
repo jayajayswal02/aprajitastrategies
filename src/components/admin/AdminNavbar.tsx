@@ -34,6 +34,10 @@ export default function AdminNavbar() {
 
   const isActive = (path: string) => pathname === path;
 
+  if (pathname === '/admin/login') {
+    return null;
+  }
+
   return (
     <>
       <nav className={styles.navbar}>

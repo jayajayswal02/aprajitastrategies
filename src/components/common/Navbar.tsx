@@ -30,13 +30,13 @@ export default function Navbar() {
         <nav className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
           <ul className={styles.navLinks}>
             <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-            <li><Link href="/#about" onClick={() => setMenuOpen(false)}>About Us</Link></li>
-            <li><Link href="/#services" onClick={() => setMenuOpen(false)}>Services</Link></li>
-            <li><Link href="/#projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
-            <li><Link href="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+            <li><Link href="/about" onClick={() => setMenuOpen(false)}>About Us</Link></li>
+            <li><Link href="/services" onClick={() => setMenuOpen(false)}>Services</Link></li>
+            <li><Link href="/projects" onClick={() => setMenuOpen(false)}>Projects</Link></li>
+            <li><Link href="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
           </ul>
           <div className={styles.ctaWrapper}>
-            <Link href="/#contact" className={styles.ctaButton} onClick={() => setMenuOpen(false)}>
+            <Link href="/contact" className={styles.ctaButton} onClick={() => setMenuOpen(false)}>
               Consult With Us
             </Link>
           </div>

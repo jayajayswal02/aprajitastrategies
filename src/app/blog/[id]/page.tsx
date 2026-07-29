@@ -5,6 +5,8 @@ import React from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import Container from '@/components/common/Container';
+import JsonLd from '@/components/seo/JsonLd';
+import { getArticleSchema, getBreadcrumbSchema } from '@/components/seo/structuredData';
 import blogData from '@/data/blog.json';
 import styles from './blog-detail.module.css';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -55,8 +57,26 @@ export default function BlogDetailPage() {
     .filter((b) => b.category === blog.category && b.id !== blog.id)
     .slice(0, 3);
 
+  const articleSchema = getArticleSchema({
+    title: blog.title,
+    excerpt: blog.excerpt,
+    date: blog.date,
+    image: blog.image,
+    author: blog.author,
+    tags: blog.tags,
+    slug: blog.id.toString(),
+  });
+
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.aprajitastrategics.com/' },
+    { name: 'Blog', url: 'https://www.aprajitastrategics.com/blog' },
+    { name: blog.title, url: `https://www.aprajitastrategics.com/blog/${blog.id}` },
+  ]);
+
   return (
     <main className={styles.blogDetailWrapper}>
+      <JsonLd data={articleSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <section className={styles.blogHeader}>
         <Container>
         

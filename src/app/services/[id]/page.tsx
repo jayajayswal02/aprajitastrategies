@@ -5,6 +5,8 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import Container from '../../../components/common/Container';
 import EnquiryModal from '../../../components/common/EnquiryModal';
+import JsonLd from '@/components/seo/JsonLd';
+import { getBreadcrumbSchema, getServiceSchema } from '@/components/seo/structuredData';
 import servicesData from '../../../data/services.json';
 import styles from './ServiceDetail.module.css';
 
@@ -112,8 +114,22 @@ export default function ServiceDetail() {
     setShowEnquiryModal(true);
   };
 
+  const serviceSchema = getServiceSchema({
+    title: service.title,
+    description: service.description,
+    slug: createSlug(service.title),
+  });
+
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.aprajitastrategics.com/' },
+    { name: 'Services', url: 'https://www.aprajitastrategics.com/#services' },
+    { name: service.title, url: `https://www.aprajitastrategics.com/services/${createSlug(service.title)}` },
+  ]);
+
   return (
     <main className={styles.serviceDetail}>
+      <JsonLd data={serviceSchema} />
+      <JsonLd data={breadcrumbSchema} />
       {/* Hero Section */}
       <section className={styles.heroSection}>
         <Container>

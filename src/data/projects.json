@@ -1,86 +1,86 @@
 [
   {
     "id": 1,
-    "title": "Nova Commercial Tower",
+    "title": "Shivam Business Tower",
     "category": "Commercial Design",
     "image": "/image/project1.webp",
-    "location": "Downtown Business District",
-    "year": 2023,
-    "description": "A modern commercial tower designed with cutting-edge architectural principles and sustainable building practices.",
-    "details": "Nova Commercial Tower is a state-of-the-art 25-story commercial complex featuring modern office spaces, retail outlets, and premium amenities. The building incorporates energy-efficient systems, smart building technology, and eco-friendly materials throughout.",
+    "location": "BKC, Mumbai, Maharashtra",
+    "year": 2024,
+    "description": "A premium commercial office tower designed with modern architecture, smart infrastructure, and sustainable construction practices.",
+    "details": "Shivam Business Tower is a 22-story Grade-A commercial building featuring premium office spaces, retail outlets, smart security systems, and energy-efficient infrastructure. The project is designed to meet IGBC Green Building standards.",
     "features": [
-      "25-Story Modern Design",
-      "Green Building Certification",
-      "Smart Building Systems",
+      "22-Story Commercial Tower",
+      "IGBC Green Building Design",
+      "Smart Security & Access Control",
       "Premium Office Spaces",
-      "Retail & Food Courts",
-      "Rooftop Garden"
+      "Retail Shops & Food Court",
+      "Rooftop Cafeteria"
     ],
-    "client": "Delta Development Corp",
-    "budget": "$45 Million",
-    "duration": "24 months"
+    "client": "Shivam Infrastructure Pvt. Ltd.",
+    "budget": "₹320 Crore",
+    "duration": "24 Months"
   },
   {
     "id": 2,
-    "title": "Serenity Villas",
+    "title": "Green Valley Villas",
     "category": "Residential Planning",
     "image": "/image/project2.webp",
-    "location": "Suburban Residential Area",
-    "year": 2022,
-    "description": "A luxurious residential community with contemporary villa designs and premium amenities.",
-    "details": "Serenity Villas is an exclusive gated community comprising 45 luxury villas designed with modern aesthetics and maximum comfort. Each villa features spacious layouts, private gardens, and premium finishes.",
+    "location": "Indore, Madhya Pradesh",
+    "year": 2023,
+    "description": "A premium gated residential township featuring luxurious villas with modern amenities and landscaped surroundings.",
+    "details": "Green Valley Villas is a residential township consisting of 60 luxury villas with spacious interiors, private gardens, clubhouse facilities, children's play area, and eco-friendly infrastructure.",
     "features": [
-      "45 Luxury Villas",
+      "60 Luxury Villas",
       "Gated Community",
-      "Private Gardens",
-      "Swimming Pool & Gym",
-      "24/7 Security",
-      "Community Center"
+      "Clubhouse & Swimming Pool",
+      "Landscaped Gardens",
+      "24×7 Security",
+      "Children's Park"
     ],
-    "client": "Harmony Homes Ltd",
-    "budget": "$32 Million",
-    "duration": "30 months"
+    "client": "Green Valley Developers",
+    "budget": "₹180 Crore",
+    "duration": "30 Months"
   },
   {
     "id": 3,
-    "title": "Tech Hub Complex",
+    "title": "Bharat IT Park",
     "category": "Structural Engineering",
     "image": "/image/project3.webp",
-    "location": "Tech Park Zone",
-    "year": 2023,
-    "description": "An innovative tech hub designed to support startups and established technology companies.",
-    "details": "Tech Hub Complex is a multi-building IT ecosystem featuring collaborative workspaces, incubation centers, and innovation labs. The complex includes state-of-the-art facilities with high-speed internet infrastructure.",
+    "location": "Electronic City, Bengaluru, Karnataka",
+    "year": 2025,
+    "description": "A world-class IT park designed for technology companies, startups, and innovation centers.",
+    "details": "Bharat IT Park consists of four modern office buildings equipped with collaborative workspaces, data centers, conference halls, incubation labs, and sustainable building systems.",
     "features": [
-      "4 Modern Buildings",
+      "4 Office Towers",
       "Co-working Spaces",
-      "Incubation Labs",
-      "High-Speed Internet",
-      "Conference Rooms",
-      "Cafeteria & Recreation"
+      "Innovation & Startup Labs",
+      "High-Speed Fiber Network",
+      "Conference & Training Centers",
+      "Food Court & Recreation Zone"
     ],
-    "client": "TechVenture Investments",
-    "budget": "$28 Million",
-    "duration": "18 months"
+    "client": "Bharat Tech Developers Ltd.",
+    "budget": "₹250 Crore",
+    "duration": "20 Months"
   },
   {
     "id": 4,
-    "title": "Eco Retreat Resort",
+    "title": "Kerala Backwater Resort",
     "category": "Architectural Planning",
     "image": "/image/project4.webp",
-    "location": "Coastal Region",
-    "year": 2024,
-    "description": "A sustainable resort that seamlessly blends luxury with environmental consciousness.",
-    "details": "Eco Retreat Resort is an eco-friendly 5-star resort featuring 120 rooms, multiple restaurants, and recreational facilities. Built with sustainable materials and renewable energy systems.",
+    "location": "Alappuzha, Kerala",
+    "year": 2025,
+    "description": "A luxury eco-resort inspired by Kerala's natural beauty, offering sustainable hospitality and premium experiences.",
+    "details": "Kerala Backwater Resort features 140 luxury rooms, private cottages, Ayurvedic wellness center, restaurants, and renewable energy systems, providing a perfect blend of comfort and sustainability.",
     "features": [
-      "120 Eco-Friendly Rooms",
-      "Multiple Dining Options",
-      "Spa & Wellness Center",
-      "Water Sports Activities",
-      "Solar & Wind Power",
-      "Organic Gardens"
+      "140 Luxury Rooms",
+      "Ayurvedic Spa",
+      "Multi-Cuisine Restaurants",
+      "Infinity Swimming Pool",
+      "Solar Power System",
+      "Organic Farming Area"
     ],
-    "client": "Nature Luxe Resorts",
-    "budget": "$55 Million",
-    "duration": "28 months"
+    "client": "Nature India Hospitality Pvt. Ltd.",
+    "budget": "₹400 Crore",
+    "duration": "32 Months"
   }
 ]

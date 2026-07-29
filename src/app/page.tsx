@@ -12,6 +12,7 @@ import FAQ from '@/components/faq/FAQ';
 import Blog from '@/components/blog/Blog';
 import Contact from '@/components/contact/Contact';
 import JsonLd from '@/components/seo/JsonLd';
+import { getBreadcrumbSchema } from '@/components/seo/structuredData';
 import EnquiryModal from '@/components/common/EnquiryModal';
 
 export default function Home() {
@@ -25,27 +26,13 @@ export default function Home() {
 
     return () => clearTimeout(timer);
   }, []);
-  const jsonLdData = {
-    "@context": "https://schema.org",
-    "@type": "ConstructionCompany",
-    "name": "APRAJITA STRATEGICS PRIVATE LIMITED",
-    "image": "https://AprajitaStrategies.com/logo.png",
-    "url": "https://AprajitaStrategies.com",
-    "telephone": "+12345678901",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "123 Building Avenue",
-      "addressLocality": "Construct City",
-      "addressRegion": "ST",
-      "postalCode": "12345",
-      "addressCountry": "US"
-    },
-    "description": "Premium construction consultancy bringing your vision to reality."
-  };
+  const breadcrumbSchema = getBreadcrumbSchema([
+    { name: 'Home', url: 'https://www.aprajitastrategics.com/' },
+  ]);
 
   return (
     <>
-      <JsonLd data={jsonLdData} />
+      <JsonLd data={breadcrumbSchema} />
       <Hero />
       <About />
       <Services />
